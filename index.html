@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>電商營運作品集 - 邱筠涵</title>
+    <meta name="description" content="邱筠涵的電商營運作品集 - 4年經驗 | 23+平台操作 | 年營收9000萬">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
@@ -53,6 +54,22 @@
         background-image: radial-gradient(circle at 2px 2px, rgba(253, 204, 102, 0.15) 1px, transparent 0);
         background-size: 40px 40px;
     }
+
+    .profile-image {
+        width: 180px;
+        height: 180px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 4px solid rgba(251, 146, 60, 0.3);
+        box-shadow: 0 10px 40px rgba(251, 146, 60, 0.3);
+    }
+
+    @media (max-width: 768px) {
+        .profile-image {
+            width: 140px;
+            height: 140px;
+        }
+    }
 </style>
 ```
 
@@ -61,127 +78,152 @@
 
 ```
 <!-- Hero Section -->
-<div class="relative h-screen flex items-center justify-center overflow-hidden">
+<div class="relative min-h-screen flex items-center justify-center overflow-hidden py-12">
     <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-transparent to-blue-600/10"></div>
     <div class="absolute inset-0 dot-pattern"></div>
     
-    <div class="relative z-10 text-center px-6 max-w-6xl mx-auto">
-        <div class="inline-block mb-6 px-6 py-2 bg-gradient-to-r from-orange-500/20 to-blue-500/20 backdrop-blur-sm rounded-full border border-orange-400/30">
-            <span class="text-orange-400 font-semibold">Portfolio 2025</span>
+    <div class="relative z-10 text-center px-4 sm:px-6 max-w-6xl mx-auto">
+        <div class="inline-block mb-4 sm:mb-6 px-4 sm:px-6 py-2 bg-gradient-to-r from-orange-500/20 to-blue-500/20 backdrop-blur-sm rounded-full border border-orange-400/30">
+            <span class="text-orange-400 font-semibold text-sm sm:text-base">Portfolio 2025</span>
         </div>
         
-        <h1 class="text-7xl md:text-8xl font-bold mb-6 gradient-text">
+        <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold mb-4 sm:mb-6 gradient-text leading-tight">
             電商營運作品集
         </h1>
         
-        <h2 class="text-4xl md:text-5xl font-bold mb-8 text-slate-200">
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 sm:mb-8 text-slate-200">
             邱筠涵
         </h2>
         
-        <p class="text-2xl md:text-3xl text-slate-300 mb-4">
+        <p class="text-xl sm:text-2xl md:text-3xl text-slate-300 mb-3 sm:mb-4">
             跨平台營運 × 數據導向成長
         </p>
         
-        <p class="text-xl text-slate-400 mb-12">
+        <p class="text-base sm:text-lg md:text-xl text-slate-400 mb-8 sm:mb-12 px-4">
             專注於平台成長、活動轉化與回饋效率優化
         </p>
         
-        <!-- Quick Stats -->
-        <div class="grid grid-cols-3 gap-6 max-w-3xl mx-auto">
-            <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
-                <div class="text-4xl font-bold text-orange-400 mb-2">4年</div>
-                <div class="text-sm text-slate-400">電商經驗</div>
+        <!-- Quick Stats with Counter Animation -->
+        <div class="grid grid-cols-3 gap-3 sm:gap-6 max-w-3xl mx-auto px-4">
+            <div class="bg-white/5 backdrop-blur-lg rounded-xl sm:rounded-2xl p-3 sm:p-6 border border-white/10">
+                <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-400 mb-1 sm:mb-2">
+                    <span class="counter" data-target="4" data-suffix="年">0年</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-400">電商經驗</div>
             </div>
-            <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
-                <div class="text-4xl font-bold text-blue-400 mb-2">20+</div>
-                <div class="text-sm text-slate-400">操作平台</div>
+            <div class="bg-white/5 backdrop-blur-lg rounded-xl sm:rounded-2xl p-3 sm:p-6 border border-white/10">
+                <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-400 mb-1 sm:mb-2">
+                    <span class="counter" data-target="23" data-suffix="+">0+</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-400">操作平台</div>
             </div>
-            <div class="bg-white/5 backdrop-blur-lg rounded-2xl p-6 border border-white/10">
-                <div class="text-4xl font-bold text-purple-400 mb-2">9000萬</div>
-                <div class="text-sm text-slate-400">年營收</div>
+            <div class="bg-white/5 backdrop-blur-lg rounded-xl sm:rounded-2xl p-3 sm:p-6 border border-white/10">
+                <div class="text-2xl sm:text-3xl md:text-4xl font-bold text-purple-400 mb-1 sm:mb-2">
+                    <span class="counter" data-target="9000" data-suffix="萬">0萬</span>
+                </div>
+                <div class="text-xs sm:text-sm text-slate-400">年營收</div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- Profile Section -->
-<div class="max-w-7xl mx-auto px-6 py-20">
-    <h3 class="text-3xl font-bold mb-12 text-center gradient-text">
+<!-- Profile Section with Photo -->
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+    <h3 class="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center gradient-text">
         專業概覽
     </h3>
+
+    <!-- Profile Photo -->
+    <div class="flex justify-center mb-8 sm:mb-12">
+        <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Crect fill='%231e293b' width='180' height='180'/%3E%3Ctext x='50%25' y='50%25' font-size='20' fill='%23fb923c' text-anchor='middle' dy='.3em'%3E邱筠涵%3C/text%3E%3C/svg%3E" 
+             alt="邱筠涵" 
+             class="profile-image">
+    </div>
     
-    <div class="grid md:grid-cols-2 gap-8 mb-12">
+    <div class="grid md:grid-cols-2 gap-6 sm:gap-8 mb-8 sm:mb-12">
         <!-- Expertise -->
-        <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover">
-            <div class="flex items-center mb-6">
-                <svg class="w-8 h-8 text-orange-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 card-hover">
+            <div class="flex items-center mb-4 sm:mb-6">
+                <svg class="w-6 h-6 sm:w-8 sm:h-8 text-orange-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"></path>
                 </svg>
-                <h4 class="text-2xl font-bold">核心專長</h4>
+                <h4 class="text-xl sm:text-2xl font-bold">核心專長</h4>
             </div>
-            <div class="space-y-4">
+            <div class="space-y-3 sm:space-y-4">
                 <div class="flex items-start">
-                    <svg class="w-5 h-5 text-orange-400 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-orange-400 mt-1 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                     <div>
-                        <div class="font-semibold text-slate-200">平台活動與回饋結構設計</div>
-                        <div class="text-sm text-slate-400 mt-1">最優化回饋方案，提升轉換效率</div>
+                        <div class="font-semibold text-slate-200 text-sm sm:text-base">平台活動與回饋結構設計</div>
+                        <div class="text-xs sm:text-sm text-slate-400 mt-1">最優化回饋方案，提升轉換效率</div>
                     </div>
                 </div>
                 <div class="flex items-start">
-                    <svg class="w-5 h-5 text-blue-400 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 mt-1 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                     <div>
-                        <div class="font-semibold text-slate-200">價格與毛利平衡</div>
-                        <div class="text-sm text-slate-400 mt-1">數據驅動定價，確保健康利潤結構</div>
+                        <div class="font-semibold text-slate-200 text-sm sm:text-base">價格與毛利平衡</div>
+                        <div class="text-xs sm:text-sm text-slate-400 mt-1">數據驅動定價，確保健康利潤結構</div>
                     </div>
                 </div>
                 <div class="flex items-start">
-                    <svg class="w-5 h-5 text-purple-400 mt-1 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-purple-400 mt-1 mr-2 sm:mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
                     </svg>
                     <div>
-                        <div class="font-semibold text-slate-200">數據拆解與優化</div>
-                        <div class="text-sm text-slate-400 mt-1">建立SOP，持續追蹤改善</div>
+                        <div class="font-semibold text-slate-200 text-sm sm:text-base">數據拆解與優化</div>
+                        <div class="text-xs sm:text-sm text-slate-400 mt-1">建立SOP，持續追蹤改善</div>
                     </div>
                 </div>
             </div>
         </div>
 
         <!-- Platforms & Categories -->
-        <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover">
-            <div class="flex items-center mb-6">
-                <svg class="w-8 h-8 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-white/10 card-hover">
+            <div class="flex items-center mb-4 sm:mb-6">
+                <svg class="w-6 h-6 sm:w-8 sm:h-8 text-blue-400 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                 </svg>
-                <h4 class="text-2xl font-bold">操作範疇</h4>
+                <h4 class="text-xl sm:text-2xl font-bold">操作範疇</h4>
             </div>
-            <div class="space-y-6">
+            <div class="space-y-4 sm:space-y-6">
                 <div>
-                    <div class="text-sm text-slate-400 mb-2">主要品類</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mb-2">主要品類</div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30">FMCG</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30">美妝</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30">廚電</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30">美容電器</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30">小家電</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30">按摩椅</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30">健身用品</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30 whitespace-nowrap">FMCG</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30 whitespace-nowrap">美妝</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30 whitespace-nowrap">廚電</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30 whitespace-nowrap">美容電器</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30 whitespace-nowrap">小家電</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30 whitespace-nowrap">按摩椅</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-orange-500/20 to-amber-500/20 rounded-full text-xs border border-orange-400/30 whitespace-nowrap">健身用品</span>
                     </div>
                 </div>
                 <div>
-                    <div class="text-sm text-slate-400 mb-2">主要平台</div>
+                    <div class="text-xs sm:text-sm text-slate-400 mb-2">操作平台（共23個）</div>
                     <div class="flex flex-wrap gap-2">
-                        <span class="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30">momo</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30">蝦皮</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30">Yahoo</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30">PChome</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30">東森</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30">屈臣氏</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30">康是美</span>
-                        <span class="px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30">Line禮物</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">momo</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">蝦皮</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">PChome</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">Yahoo</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">酷澎</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">東森</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">Friday</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">博客來</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">好市多</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">屈臣氏</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">康是美</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">松本清</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">Line禮物</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">萊爾富</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">華航</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">長榮</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">台哥大</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">中華電信</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">全虹</span>
+                        <span class="px-2 sm:px-3 py-1 bg-gradient-to-r from-blue-500/20 to-indigo-500/20 rounded-full text-xs border border-blue-400/30 whitespace-nowrap">誠品</span>
                     </div>
                 </div>
             </div>
@@ -190,86 +232,86 @@
 </div>
 
 <!-- Cases Section -->
-<div class="max-w-7xl mx-auto px-6 py-20">
-    <h3 class="text-4xl font-bold mb-4 text-center gradient-text">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+    <h3 class="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4 text-center gradient-text">
         Visual Narrative & Data Results
     </h3>
-    <p class="text-center text-slate-400 mb-16">數據驅動的實戰案例</p>
+    <p class="text-center text-slate-400 mb-8 sm:mb-16 text-sm sm:text-base">數據驅動的實戰案例</p>
 
     <!-- Case Selector -->
-    <div class="flex justify-center gap-4 mb-12 flex-wrap">
-        <button onclick="switchCase(0)" class="case-btn px-6 py-3 rounded-xl font-semibold transition-all bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg shadow-orange-500/50">
-            案例 1
+    <div class="flex justify-center gap-2 sm:gap-4 mb-8 sm:mb-12 flex-wrap px-2">
+        <button onclick="switchCase(0)" class="case-btn px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg shadow-orange-500/50 text-sm sm:text-base whitespace-nowrap">
+            案例1
         </button>
-        <button onclick="switchCase(1)" class="case-btn px-6 py-3 rounded-xl font-semibold transition-all bg-white/5 border border-white/10 text-slate-400 hover:text-white hover:border-orange-400/50">
-            案例 2
+        <button onclick="switchCase(1)" class="case-btn px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all bg-white/5 border border-white/10 text-slate-400 hover:text-white hover:border-orange-400/50 text-sm sm:text-base whitespace-nowrap">
+            案例2
         </button>
-        <button onclick="switchCase(2)" class="case-btn px-6 py-3 rounded-xl font-semibold transition-all bg-white/5 border border-white/10 text-slate-400 hover:text-white hover:border-orange-400/50">
-            案例 3
+        <button onclick="switchCase(2)" class="case-btn px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all bg-white/5 border border-white/10 text-slate-400 hover:text-white hover:border-orange-400/50 text-sm sm:text-base whitespace-nowrap">
+            案例3
         </button>
     </div>
 
     <!-- Active Case Display -->
     <div id="caseContent" class="flip-enter">
         <!-- Case 1 Content (Default) -->
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-3 gap-4 sm:gap-6">
             <!-- Main Card -->
-            <div class="md:col-span-2 bg-gradient-to-br from-orange-400 to-amber-500 rounded-3xl p-8 relative overflow-hidden">
+            <div class="md:col-span-2 bg-gradient-to-br from-orange-400 to-amber-500 rounded-2xl sm:rounded-3xl p-6 sm:p-8 relative overflow-hidden">
                 <div class="absolute inset-0 bg-black/20"></div>
                 <div class="relative z-10">
-                    <div class="mb-6">
-                        <div class="inline-block px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm mb-4">
+                    <div class="mb-4 sm:mb-6">
+                        <div class="inline-block px-3 sm:px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs sm:text-sm mb-3 sm:mb-4">
                             蝦皮 × Yahoo
                         </div>
-                        <h4 class="text-3xl font-bold mb-2">案例一：活動/回饋/價格策略設計</h4>
-                        <p class="text-white/80">高單價耐用品</p>
+                        <h4 class="text-2xl sm:text-3xl font-bold mb-2">案例一：活動/回饋/價格策略設計</h4>
+                        <p class="text-white/80 text-sm sm:text-base">高單價耐用品</p>
                     </div>
 
                     <!-- Metrics Grid -->
-                    <div class="grid grid-cols-3 gap-4 mb-6">
-                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-                            <svg class="w-6 h-6 mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="grid grid-cols-3 gap-3 sm:gap-4 mb-4 sm:mb-6">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-white/20">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 mb-1 sm:mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                             </svg>
-                            <div class="text-2xl font-bold mb-1">+94%</div>
+                            <div class="text-xl sm:text-2xl font-bold mb-1">+94%</div>
                             <div class="text-xs opacity-80">業績成長</div>
                         </div>
-                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-                            <svg class="w-6 h-6 mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-white/20">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 mb-1 sm:mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
-                            <div class="text-2xl font-bold mb-1">22→75</div>
+                            <div class="text-xl sm:text-2xl font-bold mb-1">22→75</div>
                             <div class="text-xs opacity-80">ROAS提升</div>
                         </div>
-                        <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-                            <svg class="w-6 h-6 mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-white/20">
+                            <svg class="w-5 h-5 sm:w-6 sm:h-6 mb-1 sm:mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                             </svg>
-                            <div class="text-2xl font-bold mb-1">結構改善</div>
+                            <div class="text-lg sm:text-2xl font-bold mb-1">結構改善</div>
                             <div class="text-xs opacity-80">毛利優化</div>
                         </div>
                     </div>
 
-                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-                        <div class="text-sm opacity-80 mb-1">核心策略</div>
-                        <div class="font-semibold">單一最優回饋方案</div>
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-white/20">
+                        <div class="text-xs sm:text-sm opacity-80 mb-1">核心策略</div>
+                        <div class="font-semibold text-sm sm:text-base">單一最優回饋方案</div>
                     </div>
                 </div>
             </div>
 
             <!-- Side Cards -->
-            <div class="space-y-6">
+            <div class="space-y-4 sm:space-y-6">
                 <!-- Chart Card -->
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 border border-white/10">
-                    <div class="flex items-center justify-between mb-4">
-                        <h5 class="font-bold">成效趨勢</h5>
-                        <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10">
+                    <div class="flex items-center justify-between mb-3 sm:mb-4">
+                        <h5 class="font-bold text-sm sm:text-base">成效趨勢</h5>
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                         </svg>
                     </div>
-                    <div class="space-y-3">
+                    <div class="space-y-2 sm:space-y-3">
                         <div>
-                            <div class="flex justify-between text-sm mb-1">
+                            <div class="flex justify-between text-xs sm:text-sm mb-1">
                                 <span class="text-slate-400">轉換率</span>
                                 <span class="text-green-400">↑ 35%</span>
                             </div>
@@ -278,7 +320,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="flex justify-between text-sm mb-1">
+                            <div class="flex justify-between text-xs sm:text-sm mb-1">
                                 <span class="text-slate-400">ROAS</span>
                                 <span class="text-blue-400">↑ 237%</span>
                             </div>
@@ -287,7 +329,7 @@
                             </div>
                         </div>
                         <div>
-                            <div class="flex justify-between text-sm mb-1">
+                            <div class="flex justify-between text-xs sm:text-sm mb-1">
                                 <span class="text-slate-400">毛利率</span>
                                 <span class="text-orange-400">優化</span>
                             </div>
@@ -299,24 +341,24 @@
                 </div>
 
                 <!-- Impact Card -->
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 border border-white/10">
-                    <div class="flex items-center justify-between mb-4">
-                        <h5 class="font-bold">關鍵影響</h5>
-                        <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10">
+                    <div class="flex items-center justify-between mb-3 sm:mb-4">
+                        <h5 class="font-bold text-sm sm:text-base">關鍵影響</h5>
+                        <svg class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                         </svg>
                     </div>
-                    <div class="space-y-3 text-sm">
+                    <div class="space-y-2 sm:space-y-3 text-xs sm:text-sm">
                         <div class="flex items-start">
-                            <div class="w-2 h-2 rounded-full bg-orange-400 mt-1.5 mr-3 flex-shrink-0"></div>
+                            <div class="w-2 h-2 rounded-full bg-orange-400 mt-1.5 mr-2 sm:mr-3 flex-shrink-0"></div>
                             <span class="text-slate-300">數據驅動決策機制</span>
                         </div>
                         <div class="flex items-start">
-                            <div class="w-2 h-2 rounded-full bg-blue-400 mt-1.5 mr-3 flex-shrink-0"></div>
+                            <div class="w-2 h-2 rounded-full bg-blue-400 mt-1.5 mr-2 sm:mr-3 flex-shrink-0"></div>
                             <span class="text-slate-300">建立優化SOP流程</span>
                         </div>
                         <div class="flex items-start">
-                            <div class="w-2 h-2 rounded-full bg-purple-400 mt-1.5 mr-3 flex-shrink-0"></div>
+                            <div class="w-2 h-2 rounded-full bg-purple-400 mt-1.5 mr-2 sm:mr-3 flex-shrink-0"></div>
                             <span class="text-slate-300">跨部門協作效能提升</span>
                         </div>
                     </div>
@@ -327,74 +369,74 @@
 </div>
 
 <!-- Platform Strategy -->
-<div class="max-w-7xl mx-auto px-6 py-20">
-    <h3 class="text-3xl font-bold mb-12 text-center gradient-text">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+    <h3 class="text-2xl sm:text-3xl font-bold mb-8 sm:mb-12 text-center gradient-text">
         跨平台策略框架
     </h3>
 
-    <div class="grid md:grid-cols-4 gap-6">
-        <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 border border-white/10 hover:border-orange-400/50 transition-all group card-hover">
-            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
+        <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10 hover:border-orange-400/50 transition-all group card-hover">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                 </svg>
             </div>
-            <h4 class="text-xl font-bold mb-2">蝦皮</h4>
-            <div class="text-sm text-slate-400 mb-3">拉量、活動爆發</div>
+            <h4 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">蝦皮</h4>
+            <div class="text-xs sm:text-sm text-slate-400 mb-2 sm:mb-3">拉量、活動爆發</div>
             <div class="text-xs text-orange-400 font-semibold">回饋結構、關鍵字</div>
         </div>
 
-        <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 border border-white/10 hover:border-blue-400/50 transition-all group card-hover">
-            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10 hover:border-blue-400/50 transition-all group card-hover">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                 </svg>
             </div>
-            <h4 class="text-xl font-bold mb-2">MOMO</h4>
-            <div class="text-sm text-slate-400 mb-3">高客單</div>
+            <h4 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">MOMO</h4>
+            <div class="text-xs sm:text-sm text-slate-400 mb-2 sm:mb-3">高客單</div>
             <div class="text-xs text-blue-400 font-semibold">登記回饋、價格控管</div>
         </div>
 
-        <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 border border-white/10 hover:border-purple-400/50 transition-all group card-hover">
-            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10 hover:border-purple-400/50 transition-all group card-hover">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-purple-500 to-purple-600 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                 </svg>
             </div>
-            <h4 class="text-xl font-bold mb-2">Yahoo</h4>
-            <div class="text-sm text-slate-400 mb-3">穩定毛利</div>
+            <h4 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">Yahoo</h4>
+            <div class="text-xs sm:text-sm text-slate-400 mb-2 sm:mb-3">穩定毛利</div>
             <div class="text-xs text-purple-400 font-semibold">品牌曝光</div>
         </div>
 
-        <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 border border-white/10 hover:border-green-400/50 transition-all group card-hover">
-            <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10 hover:border-green-400/50 transition-all group card-hover">
+            <div class="w-10 h-10 sm:w-12 sm:h-12 rounded-xl sm:rounded-2xl bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center mb-3 sm:mb-4 group-hover:scale-110 transition-transform">
+                <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
                 </svg>
             </div>
-            <h4 class="text-xl font-bold mb-2">官網</h4>
-            <div class="text-sm text-slate-400 mb-3">會員經營</div>
+            <h4 class="text-lg sm:text-xl font-bold mb-1 sm:mb-2">官網</h4>
+            <div class="text-xs sm:text-sm text-slate-400 mb-2 sm:mb-3">會員經營</div>
             <div class="text-xs text-green-400 font-semibold">CRM、回購</div>
         </div>
     </div>
 </div>
 
 <!-- Tools Section -->
-<div class="max-w-7xl mx-auto px-6 py-20">
-    <div class="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-3xl p-12 border border-white/10">
-        <h3 class="text-3xl font-bold mb-8 text-center gradient-text">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20">
+    <div class="bg-gradient-to-br from-slate-800/50 to-slate-900/50 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-12 border border-white/10">
+        <h3 class="text-2xl sm:text-3xl font-bold mb-6 sm:mb-8 text-center gradient-text">
             數據工具與試算邏輯
         </h3>
         
-        <div class="grid md:grid-cols-2 gap-8">
-            <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
-                <h4 class="font-bold mb-4 flex items-center">
-                    <svg class="w-5 h-5 text-orange-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <div class="grid md:grid-cols-2 gap-6 sm:gap-8">
+            <div class="bg-white/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/10">
+                <h4 class="font-bold mb-3 sm:mb-4 flex items-center text-sm sm:text-base">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-orange-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                     </svg>
                     毛利計算表
                 </h4>
-                <div class="space-y-2 text-sm text-slate-300">
+                <div class="space-y-2 text-xs sm:text-sm text-slate-300">
                     <div class="flex justify-between py-2 border-b border-slate-700">
                         <span>活動價</span>
                         <span class="font-mono">→ 成本分析</span>
@@ -414,14 +456,14 @@
                 </div>
             </div>
 
-            <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
-                <h4 class="font-bold mb-4 flex items-center">
-                    <svg class="w-5 h-5 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div class="bg-white/5 rounded-xl sm:rounded-2xl p-4 sm:p-6 border border-white/10">
+                <h4 class="font-bold mb-3 sm:mb-4 flex items-center text-sm sm:text-base">
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                     </svg>
                     回饋試算邏輯
                 </h4>
-                <div class="space-y-2 text-sm text-slate-300">
+                <div class="space-y-2 text-xs sm:text-sm text-slate-300">
                     <div class="flex justify-between py-2 border-b border-slate-700">
                         <span>門檻設定</span>
                         <span class="font-mono">→ 命中率分析</span>
@@ -442,22 +484,22 @@
             </div>
         </div>
 
-        <div class="mt-8 text-center text-slate-400 text-sm">
+        <div class="mt-6 sm:mt-8 text-center text-slate-400 text-xs sm:text-sm">
             透過 Google Sheets 建立自動化試算模型，支援活動前快速決策
         </div>
     </div>
 </div>
 
 <!-- Footer CTA -->
-<div class="max-w-7xl mx-auto px-6 py-20 text-center">
-    <div class="bg-gradient-to-br from-orange-500/20 to-blue-500/20 backdrop-blur-xl rounded-3xl p-12 border border-white/10">
-        <h3 class="text-4xl font-bold mb-4 gradient-text">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 text-center">
+    <div class="bg-gradient-to-br from-orange-500/20 to-blue-500/20 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-8 sm:p-12 border border-white/10">
+        <h3 class="text-3xl sm:text-4xl font-bold mb-3 sm:mb-4 gradient-text">
             數據驅動 · 成效導向
         </h3>
-        <p class="text-xl text-slate-300 mb-8">
+        <p class="text-lg sm:text-xl text-slate-300 mb-6 sm:mb-8">
             用數據說話，為成長負責
         </p>
-        <div class="flex justify-center gap-6 flex-wrap text-sm text-slate-400">
+        <div class="flex justify-center gap-4 sm:gap-6 flex-wrap text-xs sm:text-sm text-slate-400">
             <div class="flex items-center">
                 <div class="w-2 h-2 rounded-full bg-orange-400 mr-2"></div>
                 跨平台營運專家
@@ -475,6 +517,33 @@
 </div>
 
 <script>
+    // Counter Animation
+    function animateCounter(element) {
+        const target = parseInt(element.dataset.target);
+        const suffix = element.dataset.suffix || '';
+        const duration = 2000;
+        const steps = 60;
+        const increment = target / steps;
+        let current = 0;
+        
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            element.textContent = Math.floor(current) + suffix;
+        }, duration / steps);
+    }
+
+    // Initialize counters on page load
+    window.addEventListener('load', () => {
+        document.querySelectorAll('.counter').forEach(counter => {
+            animateCounter(counter);
+        });
+    });
+
+    // Case switching data
     const casesData = [
         {
             title: "案例一：活動/回饋/價格策略設計",
@@ -489,7 +558,7 @@
             strategy: "單一最優回饋方案"
         },
         {
-            title: "案例二：平台經營策略",
+            title: "案例二:平台經營策略",
             platform: "蝦皮 × Yahoo 差異化經營",
             category: "跨平台策略",
             gradient: "from-blue-500 to-indigo-600",
@@ -518,61 +587,59 @@
         const content = document.getElementById('caseContent');
         const buttons = document.querySelectorAll('.case-btn');
         
-        // Add flip animation
         content.style.opacity = '0';
         content.style.transform = 'scale(0.95)';
         
-        // Update button states
         buttons.forEach((btn, i) => {
             if (i === index) {
-                btn.className = 'case-btn px-6 py-3 rounded-xl font-semibold transition-all bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg shadow-orange-500/50';
+                btn.className = 'case-btn px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all bg-gradient-to-r from-orange-500 to-amber-500 text-white shadow-lg shadow-orange-500/50 text-sm sm:text-base whitespace-nowrap';
             } else {
-                btn.className = 'case-btn px-6 py-3 rounded-xl font-semibold transition-all bg-white/5 border border-white/10 text-slate-400 hover:text-white hover:border-orange-400/50';
+                btn.className = 'case-btn px-4 sm:px-6 py-2 sm:py-3 rounded-xl font-semibold transition-all bg-white/5 border border-white/10 text-slate-400 hover:text-white hover:border-orange-400/50 text-sm sm:text-base whitespace-nowrap';
             }
         });
         
         setTimeout(() => {
             const caseData = casesData[index];
             content.innerHTML = `
-                <div class="grid md:grid-cols-3 gap-6">
-                    <div class="md:col-span-2 bg-gradient-to-br ${caseData.gradient} rounded-3xl p-8 relative overflow-hidden">
+                <div class="grid md:grid-cols-3 gap-4 sm:gap-6">
+                    <div class="md:col-span-2 bg-gradient-to-br ${caseData.gradient} rounded-2xl sm:rounded-3xl p-6 sm:p-8 relative overflow-hidden">
                         <div class="absolute inset-0 bg-black/20"></div>
                         <div class="relative z-10">
-                            <div class="mb-6">
-                                <div class="inline-block px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-sm mb-4">
+                            <div class="mb-4 sm:mb-6">
+                                <div class="inline-block px-3 sm:px-4 py-1 bg-white/20 backdrop-blur-sm rounded-full text-xs sm:text-sm mb-3 sm:mb-4">
                                     ${caseData.platform}
                                 </div>
-                                <h4 class="text-3xl font-bold mb-2">${caseData.title}</h4>
-                                <p class="text-white/80">${caseData.category}</p>
+                                <h4 class="text-2xl sm:text-3xl font-bold mb-2">${caseData.title}</h4>
+                                <p class="text-white/80 text-sm sm:text-base">${caseData.category}</p>
                             </div>
-                            <div class="grid grid-cols-3 gap-4 mb-6">
+                            <div class="grid grid-cols-3 gap-3 sm:gap-4 mb-4 sm:mb-6">
                                 ${caseData.metrics.map(metric => `
-                                    <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-                                        <svg class="w-6 h-6 mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-white/20">
+                                        <svg class="w-5 h-5 sm:w-6 sm:h-6 mb-1 sm:mb-2 opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
                                         </svg>
-                                        <div class="text-2xl font-bold mb-1">${metric.value}</div>
+                                        <div class="text-xl sm:text-2xl font-bold mb-1">${metric.value}</div>
                                         <div class="text-xs opacity-80">${metric.label}</div>
                                     </div>
                                 `).join('')}
                             </div>
-                            <div class="bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20">
-                                <div class="text-sm opacity-80 mb-1">核心策略</div>
-                                <div class="font-semibold">${caseData.strategy}</div>
+                            <div class="bg-white/10 backdrop-blur-sm rounded-xl sm:rounded-2xl p-3 sm:p-4 border border-white/20">
+                                <div class="text-xs sm:text-sm opacity-80 mb-1">核心策略</div>
+                                <div class="font-semibold text-sm sm:text-base">${caseData.strategy}</div>
                             </div>
                         </div>
                     </div>
-                    <div class="space-y-6">
-                        <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 border border-white/10">
-                            <div class="flex items-center justify-between mb-4">
-                                <h5 class="font-bold">成效趨勢</h5>
-                                <svg class="w-5 h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <div class="space-y-4 sm:space-y-6">
+                        <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10">
+                            <div class="flex items-center justify-between mb-3 sm:mb-4">
+                                <h5 class="font-bold text-sm sm:text-base">成效趨勢</h5>
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-orange-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
                                 </svg>
                             </div>
-                            <div class="space-y-3">
+                            <div class="space-y-2 sm:space-y-3">
                                 <div>
-                                    <div class="flex justify-between text-sm mb-1">
+                                    <div class="flex justify-between text-xs sm:text-sm mb-1">
                                         <span class="text-slate-400">轉換率</span>
                                         <span class="text-green-400">↑ 35%</span>
                                     </div>
@@ -581,7 +648,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between text-sm mb-1">
+                                    <div class="flex justify-between text-xs sm:text-sm mb-1">
                                         <span class="text-slate-400">ROAS</span>
                                         <span class="text-blue-400">↑ 237%</span>
                                     </div>
@@ -590,7 +657,7 @@
                                     </div>
                                 </div>
                                 <div>
-                                    <div class="flex justify-between text-sm mb-1">
+                                    <div class="flex justify-between text-xs sm:text-sm mb-1">
                                         <span class="text-slate-400">毛利率</span>
                                         <span class="text-orange-400">優化</span>
                                     </div>
@@ -600,24 +667,24 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 border border-white/10">
-                            <div class="flex items-center justify-between mb-4">
-                                <h5 class="font-bold">關鍵影響</h5>
-                                <svg class="w-5 h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10">
+                            <div class="flex items-center justify-between mb-3 sm:mb-4">
+                                <h5 class="font-bold text-sm sm:text-base">關鍵影響</h5>
+                                <svg class="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                             </div>
-                            <div class="space-y-3 text-sm">
+                            <div class="space-y-2 sm:space-y-3 text-xs sm:text-sm">
                                 <div class="flex items-start">
-                                    <div class="w-2 h-2 rounded-full bg-orange-400 mt-1.5 mr-3 flex-shrink-0"></div>
+                                    <div class="w-2 h-2 rounded-full bg-orange-400 mt-1.5 mr-2 sm:mr-3 flex-shrink-0"></div>
                                     <span class="text-slate-300">數據驅動決策機制</span>
                                 </div>
                                 <div class="flex items-start">
-                                    <div class="w-2 h-2 rounded-full bg-blue-400 mt-1.5 mr-3 flex-shrink-0"></div>
+                                    <div class="w-2 h-2 rounded-full bg-blue-400 mt-1.5 mr-2 sm:mr-3 flex-shrink-0"></div>
                                     <span class="text-slate-300">建立優化SOP流程</span>
                                 </div>
                                 <div class="flex items-start">
-                                    <div class="w-2 h-2 rounded-full bg-purple-400 mt-1.5 mr-3 flex-shrink-0"></div>
+                                    <div class="w-2 h-2 rounded-full bg-purple-400 mt-1.5 mr-2 sm:mr-3 flex-shrink-0"></div>
                                     <span class="text-slate-300">跨部門協作效能提升</span>
                                 </div>
                             </div>
