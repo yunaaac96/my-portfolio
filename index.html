@@ -95,52 +95,53 @@
 <body class="bg-slate-950 text-slate-100 selection:bg-orange-500/30">
 
 <!-- Hero Section -->
-<div class="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
+<div class="relative min-h-screen flex items-center justify-center overflow-hidden py-16 sm:py-20">
     <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-slate-950 to-blue-600/10"></div>
     <div class="absolute inset-0 dot-pattern"></div>
     
-    <div class="relative z-10 text-center px-4 max-w-6xl mx-auto">
-        <div class="inline-block mb-8 px-6 py-2 bg-white/5 backdrop-blur-md rounded-full border border-orange-400/20">
-            <span class="text-orange-400 font-bold tracking-widest text-sm uppercase">Ecommerce Growth Portfolio 2026</span>
+    <div class="relative z-10 text-center px-6 max-w-6xl mx-auto">
+        <div class="inline-block mb-6 sm:mb-8 px-5 py-2 bg-white/5 backdrop-blur-md rounded-full border border-orange-400/20">
+            <span class="text-orange-400 font-bold tracking-widest text-[10px] sm:text-xs uppercase">Ecommerce Growth Portfolio 2026</span>
         </div>
         
-        <h1 class="text-6xl sm:text-7xl md:text-8xl font-black mb-6 gradient-text tracking-tighter">
+        <!-- 手機版調整：降低字級與緊湊度 -->
+        <h1 class="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black mb-6 gradient-text tracking-tight leading-tight">
             電商營運作品集
         </h1>
         
         <div class="flex flex-col items-center gap-6 mb-12">
             <div class="relative">
-                <div class="profile-image-container">
+                <div class="profile-image-container w-[150px] h-[150px] sm:w-[180px] sm:h-[180px]">
                     <img src="IMG_0385.jpeg" alt="邱筠涵 Yuna" class="profile-image" id="avatar" onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Yuna&background=fb923c&color=1e293b&size=256';">
                 </div>
             </div>
             <div>
-                <h2 class="text-4xl font-bold mb-2 text-white">
-                    邱筠涵 <span class="text-orange-400 font-light ml-2 uppercase tracking-widest">Yuna</span>
+                <h2 class="text-3xl sm:text-4xl font-bold mb-2 text-white">
+                    邱筠涵 <span class="text-orange-400 font-light ml-1 sm:ml-2 uppercase tracking-widest">Yuna</span>
                 </h2>
-                <p class="text-xl text-slate-400 font-medium tracking-wide">跨平台營運 × 數據導向成長 × 活動策略專家</p>
+                <p class="text-base sm:text-xl text-slate-400 font-medium tracking-wide px-4">跨平台營運 × 數據導向成長 × 活動策略專家</p>
             </div>
         </div>
         
         <!-- Quick Stats -->
-        <div class="grid grid-cols-3 gap-4 sm:gap-8 max-w-4xl mx-auto">
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 border border-white/10 card-hover text-center">
-                <div class="text-3xl sm:text-5xl font-black text-orange-400 mb-2">
+        <div class="grid grid-cols-3 gap-3 sm:gap-8 max-w-4xl mx-auto">
+            <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10 card-hover text-center">
+                <div class="text-xl sm:text-5xl font-black text-orange-400 mb-1 sm:mb-2">
                     <span class="counter" data-target="4" data-suffix="年">0</span>
                 </div>
-                <div class="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-widest">電商經驗</div>
+                <div class="text-[10px] sm:text-sm font-bold text-slate-500 uppercase tracking-widest">電商經驗</div>
             </div>
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 border border-white/10 card-hover text-center">
-                <div class="text-3xl sm:text-5xl font-black text-blue-400 mb-2">
+            <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10 card-hover text-center">
+                <div class="text-xl sm:text-5xl font-black text-blue-400 mb-1 sm:mb-2">
                     <span class="counter" data-target="23" data-suffix="+">0</span>
                 </div>
-                <div class="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-widest">操作平台</div>
+                <div class="text-[10px] sm:text-sm font-bold text-slate-500 uppercase tracking-widest">操作平台</div>
             </div>
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 border border-white/10 card-hover text-center">
-                <div class="text-3xl sm:text-5xl font-black text-purple-400 mb-2">
+            <div class="bg-white/5 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-4 sm:p-6 border border-white/10 card-hover text-center">
+                <div class="text-xl sm:text-5xl font-black text-purple-400 mb-1 sm:mb-2">
                     <span class="counter" data-target="9000" data-suffix="萬">0</span>
                 </div>
-                <div class="text-xs sm:text-sm font-bold text-slate-500 uppercase tracking-widest">年營收</div>
+                <div class="text-[10px] sm:text-sm font-bold text-slate-500 uppercase tracking-widest">年營收</div>
             </div>
         </div>
     </div>
@@ -149,46 +150,46 @@
 <!-- Platforms Overview -->
 <section class="py-12">
     <div class="max-w-7xl mx-auto px-4">
-        <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10">
-            <h4 class="text-2xl font-bold mb-8 flex items-center justify-center">
-                <span class="w-8 h-8 bg-blue-500 rounded-lg mr-4 flex items-center justify-center text-slate-950 font-black tracking-tighter">OS</span>
+        <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10">
+            <h4 class="text-xl sm:text-2xl font-bold mb-6 sm:mb-8 flex items-center justify-center">
+                <span class="w-7 h-7 sm:w-8 sm:h-8 bg-blue-500 rounded-lg mr-3 sm:mr-4 flex items-center justify-center text-slate-950 font-black tracking-tighter text-sm sm:text-base">OS</span>
                 23+ 平台實戰佈局
             </h4>
             <div class="flex flex-wrap justify-center gap-2">
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">momo</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">蝦皮購物</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">PChome</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">Yahoo購物中心</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">Coupang酷澎</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">博客來</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">Costco</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">屈臣氏</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">康是美</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">Line禮物</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">誠品線上</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">電信平台</span>
-                <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5">航空免稅</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5">momo</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5">蝦皮購物</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5">PChome</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5">Yahoo購物中心</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5">Coupang酷澎</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5">博客來</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5">Costco</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5">屈臣氏</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5">康是美</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5">Line禮物</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5">誠品線上</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5 text-center">電信平台</span>
+                <span class="px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-800 rounded-lg sm:rounded-xl text-[10px] sm:text-xs font-bold border border-white/5 text-center">航空免稅</span>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Cases Section -->
-<section class="py-24 bg-slate-900/50">
+<section class="py-20 sm:py-24 bg-slate-900/50">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="text-center mb-16">
-            <h3 class="text-4xl md:text-5xl font-black mb-4 gradient-text text-center">Visual Narrative & Data Results</h3>
-            <p class="text-slate-400 max-w-2xl mx-auto text-center">以數據為核心，解決實際營運痛點，打造可持續成長的電商體系</p>
+        <div class="text-center mb-12 sm:mb-16">
+            <h3 class="text-3xl sm:text-5xl font-black mb-4 gradient-text text-center">Visual Narrative & Data Results</h3>
+            <p class="text-sm sm:text-base text-slate-400 max-w-2xl mx-auto text-center px-4">以數據為核心，解決實際營運痛點，打造可持續成長的電商體系</p>
         </div>
 
-        <div class="flex flex-wrap justify-center gap-3 mb-12">
-            <button onclick="switchCase(0)" class="case-btn px-8 py-3 rounded-2xl font-bold transition-all border border-white/10 case-tab-active" id="btn-0">
+        <div class="flex flex-wrap justify-center gap-2 sm:gap-3 mb-10 sm:mb-12">
+            <button onclick="switchCase(0)" class="case-btn px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl font-bold transition-all border border-white/10 text-xs sm:text-base case-tab-active" id="btn-0">
                 策略設計
             </button>
-            <button onclick="switchCase(1)" class="case-btn px-8 py-3 rounded-2xl font-bold transition-all border border-white/10 bg-white/5 text-slate-400 hover:border-orange-500/50" id="btn-1">
+            <button onclick="switchCase(1)" class="case-btn px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl font-bold transition-all border border-white/10 text-xs sm:text-base bg-white/5 text-slate-400 hover:border-orange-500/50" id="btn-1">
                 跨平台經營
             </button>
-            <button onclick="switchCase(2)" class="case-btn px-8 py-3 rounded-2xl font-bold transition-all border border-white/10 bg-white/5 text-slate-400 hover:border-orange-500/50" id="btn-2">
+            <button onclick="switchCase(2)" class="case-btn px-6 sm:px-8 py-2.5 sm:py-3 rounded-xl sm:rounded-2xl font-bold transition-all border border-white/10 text-xs sm:text-base bg-white/5 text-slate-400 hover:border-orange-500/50" id="btn-2">
                 優化與復盤
             </button>
         </div>
@@ -197,61 +198,61 @@
     </div>
 </section>
 
-<!-- 數據工具與試算邏輯區塊 (已移動至此) -->
-<section class="py-24 text-center bg-slate-950">
+<!-- 數據工具與試算邏輯 -->
+<section class="py-20 sm:py-24 text-center bg-slate-950">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="text-center mb-16">
-            <h3 class="text-3xl md:text-4xl font-black mb-4 gradient-text">數據工具與試算邏輯</h3>
-            <p class="text-slate-400">透過 Google Sheets 建立自動化試算模型，支援活動前快速決策</p>
+        <div class="text-center mb-12 sm:mb-16">
+            <h3 class="text-2xl sm:text-4xl font-black mb-4 gradient-text">數據工具與試算邏輯</h3>
+            <p class="text-sm sm:text-base text-slate-400 px-4">透過 Google Sheets 建立自動化試算模型，支援活動前快速決策</p>
         </div>
 
-        <div class="grid md:grid-cols-2 gap-8 text-center">
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover relative overflow-hidden group">
-                <h4 class="text-2xl font-bold mb-6 flex items-center text-orange-400 justify-center">
-                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+        <div class="grid md:grid-cols-2 gap-6 sm:gap-8 text-center px-2">
+            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10 card-hover relative overflow-hidden group">
+                <h4 class="text-xl sm:text-2xl font-bold mb-6 flex items-center text-orange-400 justify-center">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
                     毛利計算表
                 </h4>
-                <div class="space-y-4">
-                    <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5">
-                        <span class="text-slate-300 font-medium">活動價</span>
-                        <span class="text-orange-400 font-mono font-bold">→ 成本分析</span>
+                <div class="space-y-3 sm:space-y-4">
+                    <div class="flex items-center justify-between p-3 sm:p-4 bg-slate-900/50 rounded-xl sm:rounded-2xl border border-white/5">
+                        <span class="text-xs sm:text-sm text-slate-300 font-medium">活動價</span>
+                        <span class="text-xs sm:text-sm text-orange-400 font-mono font-bold">→ 成本分析</span>
                     </div>
-                    <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5">
-                        <span class="text-slate-300 font-medium">平台回饋</span>
-                        <span class="text-orange-400 font-mono font-bold">→ 實際折扣</span>
+                    <div class="flex items-center justify-between p-3 sm:p-4 bg-slate-900/50 rounded-xl sm:rounded-2xl border border-white/5">
+                        <span class="text-xs sm:text-sm text-slate-300 font-medium">平台回饋</span>
+                        <span class="text-xs sm:text-sm text-orange-400 font-mono font-bold">→ 實際折扣</span>
                     </div>
-                    <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5">
-                        <span class="text-slate-300 font-medium">運費 + 贈品</span>
-                        <span class="text-orange-400 font-mono font-bold">→ 總成本</span>
+                    <div class="flex items-center justify-between p-3 sm:p-4 bg-slate-900/50 rounded-xl sm:rounded-2xl border border-white/5">
+                        <span class="text-xs sm:text-sm text-slate-300 font-medium">運費 + 贈品</span>
+                        <span class="text-xs sm:text-sm text-orange-400 font-mono font-bold">→ 總成本</span>
                     </div>
-                    <div class="flex items-center justify-between p-4 bg-orange-500/10 rounded-2xl border border-orange-500/20">
-                        <span class="text-white font-bold underline underline-offset-4">淨利率</span>
-                        <span class="text-orange-400 font-mono font-black font-bold">= 最終評估</span>
+                    <div class="flex items-center justify-between p-3 sm:p-4 bg-orange-500/10 rounded-xl sm:rounded-2xl border border-orange-500/20">
+                        <span class="text-xs sm:text-sm text-white font-bold underline underline-offset-4">淨利率</span>
+                        <span class="text-xs sm:text-sm text-orange-400 font-mono font-black font-bold">= 最終評估</span>
                     </div>
                 </div>
             </div>
 
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover relative overflow-hidden group">
-                <h4 class="text-2xl font-bold mb-6 flex items-center text-blue-400 justify-center">
-                    <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
+            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10 card-hover relative overflow-hidden group">
+                <h4 class="text-xl sm:text-2xl font-bold mb-6 flex items-center text-blue-400 justify-center">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
                     回饋試算邏輯
                 </h4>
-                <div class="space-y-4">
-                    <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5">
-                        <span class="text-slate-300 font-medium">門檻設定</span>
-                        <span class="text-blue-400 font-mono font-bold">→ 命中率分析</span>
+                <div class="space-y-3 sm:space-y-4">
+                    <div class="flex items-center justify-between p-3 sm:p-4 bg-slate-900/50 rounded-xl sm:rounded-2xl border border-white/5">
+                        <span class="text-xs sm:text-sm text-slate-300 font-medium">門檻設定</span>
+                        <span class="text-xs sm:text-sm text-blue-400 font-mono font-bold">→ 命中率分析</span>
                     </div>
-                    <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5">
-                        <span class="text-slate-300 font-medium">回饋形式</span>
-                        <span class="text-blue-400 font-mono font-bold">→ 成本評估</span>
+                    <div class="flex items-center justify-between p-3 sm:p-4 bg-slate-900/50 rounded-xl sm:rounded-2xl border border-white/5">
+                        <span class="text-xs sm:text-sm text-slate-300 font-medium">回饋形式</span>
+                        <span class="text-xs sm:text-sm text-blue-400 font-mono font-bold">→ 成本評估</span>
                     </div>
-                    <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5">
-                        <span class="text-slate-300 font-medium">回饋上限</span>
-                        <span class="text-blue-400 font-mono font-bold">→ 風險控制</span>
+                    <div class="flex items-center justify-between p-3 sm:p-4 bg-slate-900/50 rounded-xl sm:rounded-2xl border border-white/5">
+                        <span class="text-xs sm:text-sm text-slate-300 font-medium">回饋上限</span>
+                        <span class="text-xs sm:text-sm text-blue-400 font-mono font-bold">→ 風險控制</span>
                     </div>
-                    <div class="flex items-center justify-between p-4 bg-blue-500/10 rounded-2xl border border-blue-500/20">
-                        <span class="text-white font-bold underline underline-offset-4">最優方案</span>
-                        <span class="text-blue-400 font-mono font-black font-bold">= 決測依據</span>
+                    <div class="flex items-center justify-between p-3 sm:p-4 bg-blue-500/10 rounded-xl sm:rounded-2xl border border-blue-500/20">
+                        <span class="text-xs sm:text-sm text-white font-bold underline underline-offset-4">最優方案</span>
+                        <span class="text-xs sm:text-sm text-blue-400 font-mono font-black font-bold">= 決測依據</span>
                     </div>
                 </div>
             </div>
@@ -259,98 +260,98 @@
     </div>
 </section>
 
-<!-- Professional Skills & Competency Matrix -->
-<section class="py-24 relative overflow-hidden">
+<!-- Professional Skills -->
+<section class="py-20 sm:py-24 relative overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 sm:mb-16 gap-4">
             <div>
-                <h3 class="text-4xl md:text-5xl font-black mb-4 gradient-text text-left">Professional Competency</h3>
-                <p class="text-slate-400 text-left">核心專業職能與業務範圍，展現跨領域營運競爭力</p>
+                <h3 class="text-3xl sm:text-5xl font-black mb-4 gradient-text text-left">Professional Competency</h3>
+                <p class="text-sm sm:text-base text-slate-400 text-left">核心專業職能與業務範圍，展現跨領域營運競爭力</p>
             </div>
-            <div class="text-orange-400/50 font-mono text-sm hidden md:block">Skill Matrix / Expertise / 2026</div>
+            <div class="text-orange-400/50 font-mono text-xs hidden md:block">Skill Matrix / Expertise / 2026</div>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Skill 1: Ecommerce Platform -->
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover">
-                <div class="w-12 h-12 bg-orange-500/20 rounded-2xl flex items-center justify-center text-orange-400 mb-6">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
+            <!-- Skill 1 -->
+            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10 card-hover">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-orange-500/20 rounded-xl sm:rounded-2xl flex items-center justify-center text-orange-400 mb-6">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
                 </div>
-                <h4 class="text-xl font-bold mb-4 text-white">電商平台營運管理</h4>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6 text-left">熟稔 Shopee、MOMO 及各類 B2C/C2C 通路後台，擅長針對不同平台屬性進行差異化經營策略佈局。</p>
+                <h4 class="text-lg sm:text-xl font-bold mb-4 text-white">電商平台營運管理</h4>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6 text-left">熟稔 Shopee、MOMO 及各類 B2C/C2C 通路後台，擅長針對不同平台屬性進行差異化經營策略佈局。</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="skill-tag text-xs italic">Shopee</span>
-                    <span class="skill-tag text-xs italic">MOMO</span>
-                    <span class="skill-tag text-xs italic">B2C/C2C</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">Shopee</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">MOMO</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">B2C/C2C</span>
                 </div>
             </div>
 
-            <!-- Skill 2: Marketing & Planning -->
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover">
-                <div class="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 mb-6">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
+            <!-- Skill 2 -->
+            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10 card-hover">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-blue-500/20 rounded-xl sm:rounded-2xl flex items-center justify-center text-blue-400 mb-6">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988 3.988 0 01-1.564-.317z"></path></svg>
                 </div>
-                <h4 class="text-xl font-bold mb-4 text-white">行銷活動規劃與執行</h4>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6 text-left">全案策劃大型促銷檔期（Double Day）、品牌日及跨界聯名活動，透過議題包裝驅動購買慾與轉單率。</p>
+                <h4 class="text-lg sm:text-xl font-bold mb-4 text-white">行銷活動規劃與執行</h4>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6 text-left">全案策劃大型促銷檔期（Double Day）、品牌日及跨界聯名活動，透過議題包裝驅動購買慾與轉單率。</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="skill-tag text-xs italic">檔期規劃</span>
-                    <span class="skill-tag text-xs italic">聯名活動</span>
-                    <span class="skill-tag text-xs italic">促購策劃</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">檔期規劃</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">聯名活動</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">促購策劃</span>
                 </div>
             </div>
 
-            <!-- Skill 3: Channel Development -->
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover">
-                <div class="w-12 h-12 bg-purple-500/20 rounded-2xl flex items-center justify-center text-purple-400 mb-6">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
+            <!-- Skill 3 -->
+            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10 card-hover">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-purple-500/20 rounded-xl sm:rounded-2xl flex items-center justify-center text-purple-400 mb-6">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
                 </div>
-                <h4 class="text-xl font-bold mb-4 text-white">新通路開發與業務洽談</h4>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6 text-left">具備豐富的商務對接經驗，包含線上平台合約洽談、KOL 合作導流及虛實通路整合（OMO）佈局。</p>
+                <h4 class="text-lg sm:text-xl font-bold mb-4 text-white">新通路開發與業務洽談</h4>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6 text-left">具備豐富的商務對接經驗，包含線上平台合約洽談、KOL 合作導流及虛實通路整合（OMO）佈局。</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="skill-tag text-xs italic">商務洽談</span>
-                    <span class="skill-tag text-xs italic">KOL合作</span>
-                    <span class="skill-tag text-xs italic">OMO整合</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">商務洽談</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">KOL合作</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">OMO整合</span>
                 </div>
             </div>
 
-            <!-- Skill 4: Data Analytics -->
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover">
-                <div class="w-12 h-12 bg-green-500/20 rounded-2xl flex items-center justify-center text-green-400 mb-6">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
+            <!-- Skill 4 -->
+            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10 card-hover">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-green-500/20 rounded-xl sm:rounded-2xl flex items-center justify-center text-green-400 mb-6">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
                 </div>
-                <h4 class="text-xl font-bold mb-4 text-white">數據分析與成效追蹤</h4>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6 text-left">深度監測轉換率（CR）、曝光數與 ROI，善用復盤分析優化下一階段的營運效率與預算配置。</p>
+                <h4 class="text-lg sm:text-xl font-bold mb-4 text-white">數據分析與成效追蹤</h4>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6 text-left">深度監測轉換率（CR）、曝光數與 ROI，善用復盤分析優化下一階段的營運效率與預算配置。</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="skill-tag text-xs italic">轉換優化</span>
-                    <span class="skill-tag text-xs italic">ROI控制</span>
-                    <span class="skill-tag text-xs italic">復盤分析</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">轉換優化</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">ROI控制</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">復盤分析</span>
                 </div>
             </div>
 
-            <!-- Skill 5: Digital Ads -->
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover">
-                <div class="w-12 h-12 bg-cyan-500/20 rounded-2xl flex items-center justify-center text-cyan-400 mb-6">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
+            <!-- Skill 5 -->
+            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10 card-hover">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-cyan-500/20 rounded-xl sm:rounded-2xl flex items-center justify-center text-cyan-400 mb-6">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
                 </div>
-                <h4 class="text-xl font-bold mb-4 text-white">數位廣告投放與優化</h4>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6 text-left text-left">操作 Facebook Ads 及 Google Ads 平台，精準定位客群並隨時根據數據動態調整競價策略。</p>
+                <h4 class="text-lg sm:text-xl font-bold mb-4 text-white">數位廣告投放與優化</h4>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6 text-left">操作 Facebook Ads 及 Google Ads 平台，精準定位客群並隨時根據數據動態調整競價策略。</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="skill-tag text-xs italic">Facebook Ads</span>
-                    <span class="skill-tag text-xs italic">Google Ads</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">Facebook Ads</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">Google Ads</span>
                 </div>
             </div>
 
-            <!-- Skill 6: Creative Collaboration -->
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover">
-                <div class="w-12 h-12 bg-pink-500/20 rounded-2xl flex items-center justify-center text-pink-400 mb-6">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
+            <!-- Skill 6 -->
+            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-6 sm:p-8 border border-white/10 card-hover">
+                <div class="w-10 h-10 sm:w-12 sm:h-12 bg-pink-500/20 rounded-xl sm:rounded-2xl flex items-center justify-center text-pink-400 mb-6">
+                    <svg class="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
                 </div>
-                <h4 class="text-xl font-bold mb-4 text-white">視覺與文案設計協作</h4>
-                <p class="text-slate-400 text-sm leading-relaxed mb-6 text-left text-left">主導商品頁面改版與品牌故事視覺規劃，有效引導設計團隊達成「銷售導向」的素材產出。</p>
+                <h4 class="text-lg sm:text-xl font-bold mb-4 text-white">視覺與文案設計協作</h4>
+                <p class="text-slate-400 text-xs sm:text-sm leading-relaxed mb-6 text-left">主導商品頁面改版與品牌故事視覺規劃，有效引導設計團隊達成「銷售導向」的素材產出。</p>
                 <div class="flex flex-wrap gap-2">
-                    <span class="skill-tag text-xs italic">商品頁改版</span>
-                    <span class="skill-tag text-xs italic">主視覺策劃</span>
-                    <span class="skill-tag text-xs italic">文案導流</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">商品頁改版</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">主視覺策劃</span>
+                    <span class="skill-tag text-[10px] sm:text-xs italic uppercase">文案導流</span>
                 </div>
             </div>
         </div>
@@ -358,50 +359,46 @@
 </section>
 
 <!-- Toolkit Section -->
-<section class="py-24 bg-slate-900/30 text-center">
+<section class="py-20 sm:py-24 bg-slate-900/30 text-center">
     <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <h3 class="text-3xl md:text-4xl font-black mb-12 text-center gradient-text">Tools Stack</h3>
+        <h3 class="text-2xl sm:text-4xl font-black mb-12 text-center gradient-text">Tools Stack</h3>
         
         <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
-            <!-- Office -->
             <div>
-                <h5 class="text-white font-bold mb-6 flex items-center justify-center">
+                <h5 class="text-white font-bold mb-4 sm:mb-6 flex items-center justify-center text-sm sm:text-base">
                     <span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span> 辦公生產力
                 </h5>
-                <div class="space-y-3 text-slate-400 text-sm">
+                <div class="space-y-2 sm:space-y-3 text-slate-400 text-[10px] sm:text-sm">
                     <p>MS Excel (進階試算)</p>
                     <p>MS PowerPoint</p>
                     <p>MS Word</p>
                 </div>
             </div>
-            <!-- Design -->
             <div>
-                <h5 class="text-white font-bold mb-6 flex items-center justify-center">
+                <h5 class="text-white font-bold mb-4 sm:mb-6 flex items-center justify-center text-sm sm:text-base">
                     <span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span> 視覺與設計
                 </h5>
-                <div class="space-y-3 text-slate-400 text-sm">
+                <div class="space-y-2 sm:space-y-3 text-slate-400 text-[10px] sm:text-sm">
                     <p>Adobe Illustrator</p>
                     <p>Adobe Photoshop</p>
                     <p>Canva (快速產出)</p>
                 </div>
             </div>
-            <!-- AI -->
             <div>
-                <h5 class="text-white font-bold mb-6 flex items-center justify-center">
+                <h5 class="text-white font-bold mb-4 sm:mb-6 flex items-center justify-center text-sm sm:text-base">
                     <span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span> AI 智慧助手
                 </h5>
-                <div class="space-y-3 text-slate-400 text-sm">
+                <div class="space-y-2 sm:space-y-3 text-slate-400 text-[10px] sm:text-sm">
                     <p>ChatGPT / Claude</p>
                     <p>Google Gemini</p>
                     <p>NotebookLM (知識庫)</p>
                 </div>
             </div>
-            <!-- Media -->
             <div>
-                <h5 class="text-white font-bold mb-6 flex items-center justify-center">
+                <h5 class="text-white font-bold mb-4 sm:mb-6 flex items-center justify-center text-sm sm:text-base">
                     <span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span> 媒體與社群
                 </h5>
-                <div class="space-y-3 text-slate-400 text-sm">
+                <div class="space-y-2 sm:space-y-3 text-slate-400 text-[10px] sm:text-sm">
                     <p>Facebook / IG Business</p>
                     <p>YouTube 數據分析</p>
                     <p>LINE 官方帳號經營</p>
@@ -412,8 +409,8 @@
 </section>
 
 <!-- Footer -->
-<footer class="py-12 border-t border-white/10 text-center">
-    <p class="text-slate-500 text-sm tracking-widest uppercase text-center">
+<footer class="py-12 border-t border-white/10 text-center px-4">
+    <p class="text-slate-500 text-[10px] sm:text-sm tracking-widest uppercase text-center leading-relaxed">
         © 2026 CHIU YUN HAN (YUNA) - 電商營運作品集. All Rights Reserved.
     </p>
 </footer>
@@ -484,53 +481,53 @@
             display.innerHTML = `
                 <div class="grid lg:grid-cols-3 gap-8">
                     <div class="lg:col-span-2 space-y-6">
-                        <div class="bg-white/5 rounded-3xl p-8 border border-white/10">
-                            <h4 class="text-3xl font-black mb-2 text-left">${data.title}</h4>
-                            <p class="text-orange-400 font-bold mb-8 italic text-sm text-left">${data.context}</p>
+                        <div class="bg-white/5 rounded-3xl p-6 sm:p-8 border border-white/10">
+                            <h4 class="text-xl sm:text-3xl font-black mb-2 text-left">${data.title}</h4>
+                            <p class="text-orange-400 font-bold mb-6 sm:mb-8 italic text-xs sm:text-sm text-left">${data.context}</p>
                             
                             <div class="grid md:grid-cols-2 gap-8 text-left">
                                 <div>
-                                    <h5 class="text-orange-400 font-bold mb-4 uppercase text-xs tracking-widest flex items-center">
+                                    <h5 class="text-orange-400 font-bold mb-4 uppercase text-[10px] sm:text-xs tracking-widest flex items-center">
                                         <span class="w-1.5 h-1.5 bg-orange-500 rounded-full mr-2"></span> WHY
                                     </h5>
-                                    <ul class="space-y-3 text-slate-300 text-sm">
+                                    <ul class="space-y-3 text-slate-300 text-xs sm:text-sm">
                                         ${data.why.map(item => `<li class="flex items-start"><span class="mr-2 text-orange-500">▹</span>${item}</li>`).join('')}
                                     </ul>
                                 </div>
                                 <div>
-                                    <h5 class="text-blue-400 font-bold mb-4 uppercase text-xs tracking-widest flex items-center">
+                                    <h5 class="text-blue-400 font-bold mb-4 uppercase text-[10px] sm:text-xs tracking-widest flex items-center">
                                         <span class="w-1.5 h-1.5 bg-blue-500 rounded-full mr-2"></span> HOW
                                     </h5>
-                                    <ul class="space-y-3 text-slate-300 text-sm">
+                                    <ul class="space-y-3 text-slate-300 text-xs sm:text-sm">
                                         ${data.how.map(item => `<li class="flex items-start"><span class="mr-2 text-blue-500">▹</span>${item}</li>`).join('')}
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-white/5 rounded-3xl p-8 border border-white/10 text-left">
-                            <h5 class="text-purple-400 font-bold mb-4 uppercase text-xs tracking-widest flex items-center">
+                        <div class="bg-white/5 rounded-3xl p-6 sm:p-8 border border-white/10 text-left">
+                            <h5 class="text-purple-400 font-bold mb-4 uppercase text-[10px] sm:text-xs tracking-widest flex items-center">
                                 <span class="w-1.5 h-1.5 bg-purple-500 rounded-full mr-2"></span> WHAT I DID
                             </h5>
                             <div class="grid md:grid-cols-2 gap-3">
-                                ${data.what.map(item => `<div class="bg-white/5 p-4 rounded-xl border border-white/5 text-sm text-slate-300 text-left">${item}</div>`).join('')}
+                                ${data.what.map(item => `<div class="bg-white/5 p-4 rounded-xl border border-white/5 text-xs sm:text-sm text-slate-300 text-left">${item}</div>`).join('')}
                             </div>
                         </div>
                     </div>
                     <div class="space-y-6">
-                        <div class="bg-gradient-to-br from-slate-800 to-slate-950 rounded-3xl p-8 border border-white/10 shadow-2xl">
-                            <h5 class="text-white font-bold mb-6 text-center tracking-widest text-xs uppercase">Results</h5>
-                            <div class="space-y-8">
+                        <div class="bg-gradient-to-br from-slate-800 to-slate-950 rounded-3xl p-6 sm:p-8 border border-white/10 shadow-2xl">
+                            <h5 class="text-white font-bold mb-6 text-center tracking-widest text-[10px] sm:text-xs uppercase">Results</h5>
+                            <div class="space-y-6 sm:space-y-8">
                                 ${data.results.map(res => `
                                     <div class="text-center">
-                                        <div class="text-[10px] text-slate-500 font-bold uppercase mb-1 text-center">${res.label}</div>
-                                        <div class="text-4xl font-black ${res.color} text-center">${res.value}</div>
+                                        <div class="text-[9px] sm:text-[10px] text-slate-500 font-bold uppercase mb-1 text-center">${res.label}</div>
+                                        <div class="text-3xl sm:text-4xl font-black ${res.color} text-center">${res.value}</div>
                                     </div>
                                 `).join('')}
                             </div>
                         </div>
-                        <div class="bg-orange-500/10 rounded-3xl p-8 border border-orange-500/20 text-left">
+                        <div class="bg-orange-500/10 rounded-3xl p-6 sm:p-8 border border-orange-500/20 text-left">
                             <h5 class="text-orange-400 font-bold mb-3 uppercase text-[10px] tracking-widest">Reflection</h5>
-                            <p class="text-slate-300 text-sm italic leading-relaxed text-left">"${data.reflection}"</p>
+                            <p class="text-slate-300 text-xs sm:text-sm italic leading-relaxed text-left">"${data.reflection}"</p>
                         </div>
                     </div>
                 </div>
