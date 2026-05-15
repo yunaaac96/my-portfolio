@@ -1,772 +1,415 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>電商營運作品集 - 邱筠涵 Yuna</title>
-    <meta name="description" content="邱筠涵 Yuna 的電商營運作品集 - 4年經驗 | 23+ platform 操作 | 年營收 9000 萬">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap');
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GitHub README Preview — Yuna Chiu</title>
+<style>
+  /* Preview wrapper only — not part of README */
+  body {
+    background: #0d1117;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  }
+  .preview-note {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: #fb923c;
+    color: #0f172a;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 6px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    z-index: 999;
+  }
+  .readme-container {
+    background: #0d1117;
+    color: #e6edf3;
+    max-width: 860px;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #30363d;
+    padding: 40px 48px;
+    font-size: 15px;
+    line-height: 1.6;
+  }
 
-        * { font-family: 'Noto Sans TC', sans-serif; }
+  /* ── Typography ── */
+  h1 { font-size: 2rem; font-weight: 800; margin: 0 0 6px; color: #f0f6fc; letter-spacing: -0.03em; }
+  h2 { font-size: 1.1rem; font-weight: 700; color: #f0f6fc; margin: 32px 0 12px; padding-bottom: 6px; border-bottom: 1px solid #30363d; }
+  h3 { font-size: 0.95rem; font-weight: 700; color: #e6edf3; margin: 16px 0 6px; }
+  p  { margin: 0 0 10px; color: #8b949e; }
+  a  { color: #58a6ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { background: #161b22; border: 1px solid #30363d; border-radius: 4px; padding: 1px 6px; font-size: 12px; color: #79c0ff; font-family: "SF Mono", Consolas, monospace; }
+  hr { border: none; border-top: 1px solid #21262d; margin: 28px 0; }
 
-        .gradient-text {
-            background: linear-gradient(to right, #fb923c, #fbbf24, #fb923c);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
+  /* ── Header area ── */
+  .header { display: flex; align-items: flex-start; gap: 24px; margin-bottom: 28px; }
+  .avatar-placeholder {
+    width: 80px; height: 80px; border-radius: 50%;
+    background: linear-gradient(135deg, #fb923c 0%, #f59e0b 100%);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.8rem; font-weight: 900; color: #0f172a;
+    flex-shrink: 0;
+  }
+  .header-text { flex: 1; }
+  .subtitle { color: #8b949e; font-size: 0.9rem; margin: 4px 0 12px; }
 
-        .fade-in-content { animation: fadeIn 0.4s ease-out forwards; }
+  /* ── Badge row ── */
+  .badges { display: flex; flex-wrap: wrap; gap: 6px; margin-bottom: 16px; }
+  .badge {
+    display: inline-flex; align-items: center; gap: 4px;
+    padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 700;
+    letter-spacing: 0.04em; text-transform: uppercase;
+  }
+  .badge-orange  { background: rgba(251,146,60,0.15);  border: 1px solid rgba(251,146,60,0.4);  color: #fb923c; }
+  .badge-blue    { background: rgba(88,166,255,0.12);  border: 1px solid rgba(88,166,255,0.35); color: #58a6ff; }
+  .badge-green   { background: rgba(63,185,80,0.12);   border: 1px solid rgba(63,185,80,0.35);  color: #3fb950; }
+  .badge-purple  { background: rgba(188,140,255,0.12); border: 1px solid rgba(188,140,255,0.35);color: #bc8cff; }
+  .badge-yellow  { background: rgba(210,153,34,0.15);  border: 1px solid rgba(210,153,34,0.4);  color: #d2a22a; }
 
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(10px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
+  /* ── Stats grid ── */
+  .stats-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 20px 0; }
+  .stat-card {
+    background: #161b22; border: 1px solid #30363d; border-radius: 10px;
+    padding: 14px 12px; text-align: center;
+  }
+  .stat-value { font-size: 1.5rem; font-weight: 900; line-height: 1; margin-bottom: 4px; }
+  .stat-label { font-size: 10px; color: #6e7681; text-transform: uppercase; letter-spacing: 0.06em; font-weight: 600; }
 
-        .card-hover { transition: all 0.3s ease; }
-        .card-hover:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(251, 146, 60, 0.15); }
+  /* ── Experience table ── */
+  .exp-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  .exp-table th {
+    text-align: left; padding: 8px 12px; font-size: 10px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 0.08em; color: #6e7681;
+    border-bottom: 1px solid #21262d;
+  }
+  .exp-table td { padding: 10px 12px; border-bottom: 1px solid #161b22; vertical-align: top; }
+  .exp-table tr:last-child td { border-bottom: none; }
+  .exp-company { font-weight: 700; color: #e6edf3; }
+  .exp-role    { color: #8b949e; font-size: 12px; margin-top: 2px; }
+  .exp-period  { color: #6e7681; font-size: 11px; white-space: nowrap; }
+  .exp-intl    { display: inline-block; background: rgba(88,166,255,0.1); border: 1px solid rgba(88,166,255,0.25); color: #58a6ff; font-size: 10px; font-weight: 700; padding: 1px 6px; border-radius: 10px; margin-top: 3px; }
 
-        .dot-pattern {
-            background-image: radial-gradient(circle at 2px 2px, rgba(253, 204, 102, 0.1) 1px, transparent 0);
-            background-size: 40px 40px;
-        }
+  /* ── Skill chips ── */
+  .skill-section { margin: 14px 0; }
+  .skill-group-label { font-size: 10px; font-weight: 700; color: #6e7681; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 8px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+  .chip {
+    background: #161b22; border: 1px solid #30363d; border-radius: 6px;
+    padding: 4px 10px; font-size: 11px; color: #c9d1d9; font-weight: 500;
+  }
 
-        .profile-image-container {
-            width: 180px; height: 180px; border-radius: 50%; overflow: hidden;
-            border: 4px solid rgba(251, 146, 60, 0.5);
-            box-shadow: 0 0 30px rgba(251, 146, 60, 0.3);
-            background-color: #1e293b;
-            display: flex; align-items: center; justify-content: center; position: relative;
-        }
-        .profile-image { width: 100%; height: 100%; object-fit: cover; display: block; }
+  /* ── Lang bars ── */
+  .lang-row { display: flex; align-items: center; gap: 10px; margin: 6px 0; }
+  .lang-name { width: 120px; font-size: 12px; color: #8b949e; }
+  .lang-bar-bg { flex: 1; height: 6px; background: #21262d; border-radius: 10px; overflow: hidden; }
+  .lang-bar    { height: 100%; border-radius: 10px; }
+  .lang-level  { width: 80px; font-size: 11px; color: #6e7681; text-align: right; }
 
-        .case-tab-active {
-            background: linear-gradient(to right, #fb923c, #f59e0b);
-            color: white;
-            box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
-        }
-
-        .nav-active {
-            background: rgba(251, 146, 60, 0.15);
-            border: 1px solid rgba(251, 146, 60, 0.5);
-            color: #fb923c;
-        }
-
-        .lang-btn-active { background: #fb923c; color: #0f172a; }
-
-        .skill-tag {
-            background: rgba(255,255,255,0.05);
-            border: 1px solid rgba(255,255,255,0.1);
-            padding: 0.5rem 1rem; border-radius: 12px;
-            font-size: 0.875rem; color: #cbd5e1; transition: all 0.2s;
-        }
-        .skill-tag:hover { border-color: #fb923c; color: #fb923c; background: rgba(251,146,60,0.05); }
-
-        .hide-scrollbar::-webkit-scrollbar { display: none; }
-        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
-
-        /* 海外市場標籤 */
-        .intl-badge {
-            display: inline-flex; align-items: center; gap: 4px;
-            background: rgba(96, 165, 250, 0.15);
-            border: 1px solid rgba(96, 165, 250, 0.3);
-            color: #93c5fd; font-size: 0.65rem; font-weight: 700;
-            padding: 2px 8px; border-radius: 999px;
-            letter-spacing: 0.05em; text-transform: uppercase;
-        }
-    </style>
+  /* ── Contact row ── */
+  .contact-row { display: flex; flex-wrap: wrap; gap: 16px; margin-top: 16px; }
+  .contact-item { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #8b949e; }
+  .contact-icon { font-size: 14px; }
+</style>
 </head>
-<body class="bg-slate-950 text-slate-100 selection:bg-orange-500/30 text-center">
+<body>
 
-<!-- Fixed Navigation Toggle -->
-<nav class="fixed top-6 left-1/2 -translate-x-1/2 z-[100] bg-slate-900/80 backdrop-blur-xl border border-white/10 rounded-full p-1.5 shadow-2xl">
-    <div class="flex items-center gap-1">
-        <button onclick="toggleView('portfolio')" id="nav-portfolio" class="px-6 sm:px-8 py-2.5 rounded-full text-xs sm:text-sm font-black transition-all nav-active text-center">
-            作品集 Portfolio
-        </button>
-        <button onclick="toggleView('resume')" id="nav-resume" class="px-6 sm:px-8 py-2.5 rounded-full text-xs sm:text-sm font-black transition-all text-slate-400 hover:text-white text-center">
-            個人履歷 CV
-        </button>
+<div class="preview-note">👁 Preview Only — Copy the README below</div>
+
+<div class="readme-container">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="avatar-placeholder">邱</div>
+    <div class="header-text">
+      <h1>邱筠涵 · Yuna Chiu</h1>
+      <p class="subtitle">E-commerce Operations Manager · Cross-Border Growth Specialist</p>
+      <div class="badges">
+        <span class="badge badge-orange">🛒 4 Yrs E-commerce</span>
+        <span class="badge badge-blue">🌏 TW · SG · HK</span>
+        <span class="badge badge-green">📈 GMV +64% MoM</span>
+        <span class="badge badge-purple">🇰🇷 TOPIK Level 6</span>
+        <span class="badge badge-yellow">⚡ Currently Open to Opportunities</span>
+      </div>
     </div>
-</nav>
+  </div>
 
-<!-- ==========================================
-     PORTFOLIO VIEW
-     ========================================== -->
-<div id="view-portfolio" class="fade-in-content">
-    <!-- Hero Section -->
-    <div class="relative min-h-screen flex items-center justify-center overflow-hidden py-20">
-        <div class="absolute inset-0 bg-gradient-to-br from-orange-500/10 via-slate-950 to-blue-600/10"></div>
-        <div class="absolute inset-0 dot-pattern"></div>
+  <hr>
 
-        <div class="relative z-10 text-center px-4 max-w-6xl mx-auto">
-            <div class="inline-block mb-8 px-6 py-2 bg-white/5 backdrop-blur-md rounded-full border border-orange-400/20">
-                <span class="text-orange-400 font-bold tracking-widest text-sm uppercase">Ecommerce Growth Portfolio 2026</span>
-            </div>
-
-            <h1 class="text-6xl sm:text-7xl md:text-8xl font-black mb-6 gradient-text tracking-tighter text-center">
-                電商營運作品集
-            </h1>
-
-            <div class="flex flex-col items-center gap-6 mb-12">
-                <div class="relative">
-                    <div class="profile-image-container">
-                        <img src="IMG_0385.jpeg" alt="邱筠涵 Yuna" class="profile-image" id="avatar"
-                             onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Yuna&background=fb923c&color=1e293b&size=256';">
-                    </div>
-                </div>
-                <div>
-                    <h2 class="text-4xl font-bold mb-2 text-white">
-                        邱筠涵 <span class="text-orange-400 font-light ml-2 uppercase tracking-widest">Yuna</span>
-                    </h2>
-                    <p class="text-xl text-slate-400 font-medium tracking-wide">跨平台營運 × 數據導向成長 × 跨境市場佈局</p>
-                </div>
-            </div>
-
-            <!-- Quick Stats -->
-            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-4xl mx-auto">
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-5 border border-white/10 card-hover text-center">
-                    <div class="text-3xl sm:text-4xl font-black text-orange-400 mb-2">
-                        <span class="counter" data-target="4" data-suffix="年">0</span>
-                    </div>
-                    <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">電商經驗</div>
-                </div>
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-5 border border-white/10 card-hover text-center">
-                    <div class="text-3xl sm:text-4xl font-black text-blue-400 mb-2">
-                        <span class="counter" data-target="23" data-suffix="+">0</span>
-                    </div>
-                    <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">操作平台</div>
-                </div>
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-5 border border-white/10 card-hover text-center">
-                    <div class="text-3xl sm:text-4xl font-black text-purple-400 mb-2">
-                        <span class="counter" data-target="9000" data-suffix="萬">0</span>
-                    </div>
-                    <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">年營收高峰</div>
-                </div>
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-5 border border-white/10 card-hover text-center">
-                    <div class="text-3xl sm:text-4xl font-black text-green-400 mb-2">
-                        <span class="counter" data-target="3" data-suffix="國">0</span>
-                    </div>
-                    <div class="text-xs font-bold text-slate-500 uppercase tracking-widest">海外市場</div>
-                </div>
-            </div>
-        </div>
+  <!-- STATS -->
+  <div class="stats-grid">
+    <div class="stat-card">
+      <div class="stat-value" style="color:#fb923c;">4年</div>
+      <div class="stat-label">電商年資</div>
     </div>
+    <div class="stat-card">
+      <div class="stat-value" style="color:#58a6ff;">23+</div>
+      <div class="stat-label">操作平台</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" style="color:#3fb950;">900萬</div>
+      <div class="stat-label">月均業績高峰</div>
+    </div>
+    <div class="stat-card">
+      <div class="stat-value" style="color:#bc8cff;">3</div>
+      <div class="stat-label">海外市場</div>
+    </div>
+  </div>
 
-    <!-- Platforms Overview -->
-    <section class="py-12">
-        <div class="max-w-7xl mx-auto px-4">
-            <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 text-center">
-                <h4 class="text-2xl font-bold mb-8 flex items-center justify-center">
-                    <span class="w-8 h-8 bg-blue-500 rounded-lg mr-4 flex items-center justify-center text-slate-950 font-black tracking-tighter">OS</span>
-                    23+ 平台實戰佈局
-                </h4>
+  <!-- ABOUT -->
+  <h2>👋 About Me</h2>
+  <p>
+    跨平台電商營運經理，專注於 <strong style="color:#e6edf3;">數據導向成長策略</strong>、跨境市場建置與活動策略規劃。
+    目前主導台灣、新加坡、香港三地寵物全品類電商從 0 到 1 的完整通路建構，
+    涵蓋 Shopee、Lazada、Shopify 及 CYBERBIZ，管理約 500 個 SKU。
+  </p>
+  <p>
+    Cross-border e-commerce operations manager specializing in <strong style="color:#e6edf3;">data-driven growth</strong>,
+    multi-market channel development, and campaign strategy across Taiwan, Singapore & Hong Kong.
+  </p>
 
-                <!-- 台灣市場 -->
-                <div class="mb-6">
-                    <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-3 text-left">🇹🇼 台灣市場</p>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-7 gap-3">
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">momo</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">蝦皮購物</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">PChome</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">Yahoo購物中心</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">Coupang酷澎</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">博客來</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">Costco</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">屈臣氏</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">康是美</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">Line禮物</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">誠品線上</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">電信平台</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">航空免稅</span>
-                        <span class="px-4 py-2 bg-slate-800 rounded-xl text-xs font-bold border border-white/5 flex items-center justify-center">CYBERBIZ官網</span>
-                    </div>
-                </div>
+  <!-- EXPERIENCE -->
+  <h2>💼 Work Experience</h2>
+  <table class="exp-table">
+    <thead>
+      <tr>
+        <th>Company</th>
+        <th>Role</th>
+        <th>Period</th>
+        <th>Key Achievement</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          <div class="exp-company">尚懿科技發展有限公司</div>
+          <div><span class="exp-intl">🌏 TW · SG · HK</span></div>
+        </td>
+        <td><div class="exp-role">電商營運經理</div></td>
+        <td class="exp-period">2026.01 – 至今</td>
+        <td style="color:#3fb950;font-size:12px;">GMV 月均 +64%<br>最高單月 +150%</td>
+      </tr>
+      <tr>
+        <td><div class="exp-company">城欣科技股份有限公司</div></td>
+        <td><div class="exp-role">電商營運資深專員</div></td>
+        <td class="exp-period">2024.07 – 2026.01</td>
+        <td style="color:#fb923c;font-size:12px;">YOY +57%<br>月均業績 900萬</td>
+      </tr>
+      <tr>
+        <td><div class="exp-company">可易家電有限公司</div></td>
+        <td><div class="exp-role">業務主任</div></td>
+        <td class="exp-period">2023.09 – 2024.05</td>
+        <td style="color:#58a6ff;font-size:12px;">CR +21%<br>業績 +48%</td>
+      </tr>
+      <tr>
+        <td><div class="exp-company">十方力有限公司</div></td>
+        <td><div class="exp-role">行銷企劃專員</div></td>
+        <td class="exp-period">2022.04 – 2023.02</td>
+        <td style="color:#8b949e;font-size:12px;">KOL 開發<br>韓國市場選品</td>
+      </tr>
+      <tr>
+        <td><div class="exp-company">富海科技翻譯有限公司</div></td>
+        <td><div class="exp-role">韓文翻譯人員</div></td>
+        <td class="exp-period">2021.05 – 2022.01</td>
+        <td style="color:#8b949e;font-size:12px;">韓文翻譯<br>跨文化溝通</td>
+      </tr>
+    </tbody>
+  </table>
 
-                <!-- 海外市場 -->
-                <div>
-                    <p class="text-xs font-bold text-blue-400/70 uppercase tracking-widest mb-3 text-left">🌏 海外市場（新加坡・香港）</p>
-                    <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3">
-                        <span class="px-4 py-2 bg-blue-900/30 rounded-xl text-xs font-bold border border-blue-500/20 flex items-center justify-center gap-1.5">
-                            <span class="intl-badge">SG</span> Shopee
-                        </span>
-                        <span class="px-4 py-2 bg-blue-900/30 rounded-xl text-xs font-bold border border-blue-500/20 flex items-center justify-center gap-1.5">
-                            <span class="intl-badge">SG</span> Lazada
-                        </span>
-                        <span class="px-4 py-2 bg-blue-900/30 rounded-xl text-xs font-bold border border-blue-500/20 flex items-center justify-center gap-1.5">
-                            <span class="intl-badge">SG</span> Shopify官網
-                        </span>
-                        <span class="px-4 py-2 bg-blue-900/30 rounded-xl text-xs font-bold border border-blue-500/20 flex items-center justify-center gap-1.5">
-                            <span class="intl-badge">HK</span> Shopify官網
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- SKILLS -->
+  <h2>🛠️ Tech Stack & Skills</h2>
 
-    <!-- Cases Section -->
-    <section class="py-24 bg-slate-900/50 text-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-16">
-                <h3 class="text-4xl md:text-5xl font-black mb-4 gradient-text">Visual Narrative & Data Results</h3>
-                <p class="text-slate-400 max-w-2xl mx-auto">以數據為核心，解決實際營運痛點，打造可持續成長的電商體系</p>
-            </div>
+  <div class="skill-section">
+    <div class="skill-group-label">🛒 電商平台 E-commerce Platforms</div>
+    <div class="chips">
+      <span class="chip">Shopee TW/SG</span>
+      <span class="chip">Lazada SG</span>
+      <span class="chip">MOMO</span>
+      <span class="chip">Yahoo Shopping</span>
+      <span class="chip">PChome</span>
+      <span class="chip">Shopify</span>
+      <span class="chip">CYBERBIZ</span>
+    </div>
+  </div>
 
-            <div class="flex flex-wrap justify-center gap-3 mb-12">
-                <button onclick="switchCase(0)" class="case-btn px-8 py-3 rounded-2xl font-bold transition-all border border-white/10 case-tab-active" id="btn-0">策略設計</button>
-                <button onclick="switchCase(1)" class="case-btn px-8 py-3 rounded-2xl font-bold transition-all border border-white/10 bg-white/5 text-slate-400 hover:border-orange-500/50" id="btn-1">跨平台經營</button>
-                <button onclick="switchCase(2)" class="case-btn px-8 py-3 rounded-2xl font-bold transition-all border border-white/10 bg-white/5 text-slate-400 hover:border-orange-500/50" id="btn-2">優化與復盤</button>
-            </div>
+  <div class="skill-section">
+    <div class="skill-group-label">📊 數位廣告 Digital Ads</div>
+    <div class="chips">
+      <span class="chip">Google Ads ✓ Certified</span>
+      <span class="chip">Meta Ads</span>
+      <span class="chip">Platform Ads (Shopee/MOMO)</span>
+    </div>
+  </div>
 
-            <div id="caseDisplay" class="fade-in-content min-h-[400px]"></div>
-        </div>
-    </section>
+  <div class="skill-section">
+    <div class="skill-group-label">🎨 設計與生產力工具 Design & Productivity</div>
+    <div class="chips">
+      <span class="chip">Adobe Illustrator</span>
+      <span class="chip">Adobe Photoshop</span>
+      <span class="chip">Canva</span>
+      <span class="chip">MS Excel (Advanced)</span>
+      <span class="chip">PowerPoint</span>
+    </div>
+  </div>
 
-    <!-- 數據工具與試算邏輯 -->
-    <section class="py-24 text-center bg-slate-950">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="text-center mb-16">
-                <h3 class="text-3xl md:text-4xl font-black mb-4 gradient-text">數據工具與試算邏輯</h3>
-                <p class="text-slate-400">透過 Google Sheets 建立自動化試算模型，支援活動前快速決策</p>
-            </div>
+  <div class="skill-section">
+    <div class="skill-group-label">🤖 AI 工具 AI Tools</div>
+    <div class="chips">
+      <span class="chip">ChatGPT</span>
+      <span class="chip">Claude</span>
+      <span class="chip">Google Gemini</span>
+      <span class="chip">NotebookLM</span>
+    </div>
+  </div>
 
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover">
-                    <h4 class="text-2xl font-bold mb-6 flex items-center text-orange-400 justify-center">
-                        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
-                        毛利計算表
-                    </h4>
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5"><span class="text-slate-300 font-medium">活動價</span><span class="text-orange-400 font-mono font-bold">→ 成本分析</span></div>
-                        <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5"><span class="text-slate-300 font-medium">平台回饋</span><span class="text-orange-400 font-mono font-bold">→ 實際折扣</span></div>
-                        <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5"><span class="text-slate-300 font-medium">運費 + 贈品</span><span class="text-orange-400 font-mono font-bold">→ 總成本</span></div>
-                        <div class="flex items-center justify-between p-4 bg-orange-500/10 rounded-2xl border border-orange-500/20"><span class="text-white font-bold underline underline-offset-4">淨利率</span><span class="text-orange-400 font-mono font-black">= 最終評估</span></div>
-                    </div>
-                </div>
+  <!-- LANGUAGES -->
+  <h2>🌐 Languages</h2>
+  <div class="lang-row">
+    <div class="lang-name">中文 Chinese</div>
+    <div class="lang-bar-bg"><div class="lang-bar" style="width:100%;background:#fb923c;"></div></div>
+    <div class="lang-level">母語 Native</div>
+  </div>
+  <div class="lang-row">
+    <div class="lang-name">韓文 Korean</div>
+    <div class="lang-bar-bg"><div class="lang-bar" style="width:90%;background:#58a6ff;"></div></div>
+    <div class="lang-level">TOPIK 6 高級</div>
+  </div>
+  <div class="lang-row">
+    <div class="lang-name">英文 English</div>
+    <div class="lang-bar-bg"><div class="lang-bar" style="width:55%;background:#3fb950;"></div></div>
+    <div class="lang-level">TOEIC 600 中級</div>
+  </div>
 
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover">
-                    <h4 class="text-2xl font-bold mb-6 flex items-center text-blue-400 justify-center">
-                        <svg class="w-6 h-6 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 3.055A9.001 9.001 0 1020.945 13H11V3.055z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20.488 9H15V3.512A9.025 9.025 0 0120.488 9z"></path></svg>
-                        回饋試算邏輯
-                    </h4>
-                    <div class="space-y-4">
-                        <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5"><span class="text-slate-300 font-medium">門檻設定</span><span class="text-blue-400 font-mono font-bold">→ 命中率分析</span></div>
-                        <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5"><span class="text-slate-300 font-medium">回饋形式</span><span class="text-blue-400 font-mono font-bold">→ 成本評估</span></div>
-                        <div class="flex items-center justify-between p-4 bg-slate-900/50 rounded-2xl border border-white/5"><span class="text-slate-300 font-medium">回饋上限</span><span class="text-blue-400 font-mono font-bold">→ 風險控制</span></div>
-                        <div class="flex items-center justify-between p-4 bg-blue-500/10 rounded-2xl border border-blue-500/20"><span class="text-white font-bold underline underline-offset-4">最優方案</span><span class="text-blue-400 font-mono font-black">= 決策依據</span></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- CERTS -->
+  <h2>🏆 Certifications</h2>
+  <div class="chips">
+    <span class="chip">✦ Google Ads 認證</span>
+    <span class="chip">✦ AI 應用規劃師（第一屆）</span>
+    <span class="chip">✦ TOPIK 韓文檢定 6 級</span>
+    <span class="chip">✦ SSE Microsoft Office 認證</span>
+  </div>
 
-    <!-- Professional Skills -->
-    <section class="py-24 relative overflow-hidden text-left">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-4">
-                <div>
-                    <h3 class="text-4xl md:text-5xl font-black mb-4 gradient-text">Professional Competency</h3>
-                    <p class="text-slate-400">核心專業職能與業務範圍，展現跨領域營運競爭力</p>
-                </div>
-                <div class="text-orange-400/50 font-mono text-sm hidden md:block">Skill Matrix / Expertise / 2026</div>
-            </div>
+  <!-- CONTACT -->
+  <h2>📬 Contact</h2>
+  <div class="contact-row">
+    <div class="contact-item"><span class="contact-icon">✉️</span> <a href="mailto:dots.chiu@gmail.com">dots.chiu@gmail.com</a></div>
+    <div class="contact-item"><span class="contact-icon">📱</span> 0918-896-697</div>
+    <div class="contact-item"><span class="contact-icon">📍</span> 新北市三重區・台灣</div>
+  </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover text-left">
-                    <div class="w-12 h-12 bg-orange-500/20 rounded-2xl flex items-center justify-center text-orange-400 mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4 text-white">電商平台營運管理</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">熟稔 Shopee、MOMO 及各類 B2C/C2C 通路後台，擅長針對不同平台屬性進行差異化經營策略佈局。</p>
-                    <div class="flex flex-wrap gap-2"><span class="skill-tag text-xs italic">Shopee</span><span class="skill-tag text-xs italic">MOMO</span><span class="skill-tag text-xs italic">B2C/C2C</span></div>
-                </div>
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover text-left">
-                    <div class="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center text-blue-400 mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4 text-white">跨境市場開發佈局</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">主導台、港、星三地市場從 0 到有的電商架構建置，涵蓋平台開設、官網架構與跨境廣告初始投放。</p>
-                    <div class="flex flex-wrap gap-2"><span class="skill-tag text-xs italic">Shopee SG</span><span class="skill-tag text-xs italic">Lazada SG</span><span class="skill-tag text-xs italic">Shopify HK/SG</span></div>
-                </div>
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover text-left">
-                    <div class="w-12 h-12 bg-purple-500/20 rounded-2xl flex items-center justify-center text-purple-400 mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5.882V19.24a1.76 1.76 0 01-3.417.592l-2.147-6.15M18 13a3 3 0 100-6M5.436 13.683A4.001 4.001 0 017 6h1.832c4.1 0 7.625-1.234 9.168-3v14c-1.543-1.766-5.067-3-9.168-3H7a3.988-3.988 0 01-1.564-.317z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4 text-white">行銷活動規劃與執行</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">全案策劃大型促銷檔期（Double Day）、品牌日及跨界聯名活動，透過議題包裝驅動購買慾與轉單率。</p>
-                    <div class="flex flex-wrap gap-2"><span class="skill-tag text-xs italic">檔期規劃</span><span class="skill-tag text-xs italic">聯名活動</span><span class="skill-tag text-xs italic">促購策劃</span></div>
-                </div>
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover text-left">
-                    <div class="w-12 h-12 bg-green-500/20 rounded-2xl flex items-center justify-center text-green-400 mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4 text-white">數據分析與成效追蹤</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">深度監測轉換率（CR）、GMV 成長與 ROI，善用復盤分析優化下一階段的營運效率與預算配置。</p>
-                    <div class="flex flex-wrap gap-2"><span class="skill-tag text-xs italic">轉換優化</span><span class="skill-tag text-xs italic">GMV追蹤</span><span class="skill-tag text-xs italic">復盤分析</span></div>
-                </div>
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover text-left">
-                    <div class="w-12 h-12 bg-cyan-500/20 rounded-2xl flex items-center justify-center text-cyan-400 mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 15l-2 5L9 9l11 4-5 2zm0 0l5 5M7.188 2.239l.777 2.897M5.136 7.965l-2.898-.777M13.95 4.05l-2.122 2.122m-5.657 5.656l-2.12 2.122"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4 text-white">數位廣告投放與優化</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">操作 Facebook Ads、Google Ads 及平台內廣告，精準定位客群並根據數據動態調整競價策略。</p>
-                    <div class="flex flex-wrap gap-2"><span class="skill-tag text-xs italic">Meta Ads</span><span class="skill-tag text-xs italic">Google Ads</span><span class="skill-tag text-xs italic">平台廣告</span></div>
-                </div>
-                <div class="bg-white/5 backdrop-blur-xl rounded-3xl p-8 border border-white/10 card-hover text-left">
-                    <div class="w-12 h-12 bg-pink-500/20 rounded-2xl flex items-center justify-center text-pink-400 mb-6">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"></path></svg>
-                    </div>
-                    <h4 class="text-xl font-bold mb-4 text-white">視覺與文案設計協作</h4>
-                    <p class="text-slate-400 text-sm leading-relaxed mb-6">主導商品頁面改版與品牌故事視覺規劃，有效引導設計團隊達成「銷售導向」的素材產出。</p>
-                    <div class="flex flex-wrap gap-2"><span class="skill-tag text-xs italic">商品頁改版</span><span class="skill-tag text-xs italic">主視覺策劃</span><span class="skill-tag text-xs italic">文案導流</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
+  <hr>
+  <p style="font-size:11px;color:#484f58;text-align:center;">
+    © 2026 Chiu Yun-Han (Yuna) · E-commerce Operations Manager
+  </p>
 
-    <!-- Toolkit Section -->
-    <section class="py-24 bg-slate-900/30 text-center">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6">
-            <h3 class="text-3xl md:text-4xl font-black mb-12 gradient-text">Tools Stack</h3>
-            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-                <div>
-                    <h5 class="text-white font-bold mb-6 flex items-center justify-center"><span class="w-2 h-2 bg-orange-500 rounded-full mr-2"></span> 辦公生產力</h5>
-                    <div class="space-y-3 text-slate-400 text-sm"><p>MS Excel (進階試算)</p><p>MS PowerPoint</p><p>MS Word</p></div>
-                </div>
-                <div>
-                    <h5 class="text-white font-bold mb-6 flex items-center justify-center"><span class="w-2 h-2 bg-blue-500 rounded-full mr-2"></span> 視覺與設計</h5>
-                    <div class="space-y-3 text-slate-400 text-sm"><p>Adobe Illustrator</p><p>Adobe Photoshop</p><p>Canva (快速產出)</p></div>
-                </div>
-                <div>
-                    <h5 class="text-white font-bold mb-6 flex items-center justify-center"><span class="w-2 h-2 bg-green-500 rounded-full mr-2"></span> AI 智慧助手</h5>
-                    <div class="space-y-3 text-slate-400 text-sm"><p>ChatGPT / Claude</p><p>Google Gemini</p><p>NotebookLM (知識庫)</p></div>
-                </div>
-                <div>
-                    <h5 class="text-white font-bold mb-6 flex items-center justify-center"><span class="w-2 h-2 bg-purple-500 rounded-full mr-2"></span> 媒體與社群</h5>
-                    <div class="space-y-3 text-slate-400 text-sm"><p>Facebook / IG Business</p><p>YouTube 數據分析</p><p>LINE 官方帳號經營</p></div>
-                </div>
-            </div>
-        </div>
-    </section>
 </div>
 
-<!-- ==========================================
-     RESUME VIEW
-     ========================================== -->
-<div id="view-resume" class="hidden fade-in-content min-h-screen pt-32 pb-24 px-6 text-left">
-    <div class="max-w-5xl mx-auto">
-        <div class="flex justify-end mb-8">
-            <div class="bg-slate-900 border border-white/10 rounded-xl p-1 flex gap-1">
-                <button onclick="toggleLang('zh')" id="lang-zh" class="px-5 py-2 rounded-lg text-xs font-bold transition-all lang-btn-active">中文</button>
-                <button onclick="toggleLang('en')" id="lang-en" class="px-5 py-2 rounded-lg text-xs font-bold transition-all text-slate-400">English</button>
-            </div>
-        </div>
-
-        <header class="bg-white/5 backdrop-blur-xl rounded-[2.5rem] p-8 sm:p-12 border border-white/10 mb-8 relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-80 h-80 bg-orange-500/10 blur-[120px] -mr-40 -mt-40"></div>
-            <div class="relative z-10 flex flex-col md:flex-row gap-10 items-center md:items-start">
-                <div class="profile-image-container w-36 h-36">
-                    <img src="IMG_0385.jpeg" alt="Yuna" class="w-full h-full object-cover"
-                         onerror="this.onerror=null; this.src='https://ui-avatars.com/api/?name=Yuna&background=fb923c&color=1e293b&size=256';">
-                </div>
-                <div class="flex-grow">
-                    <h1 class="text-5xl font-black text-white mb-3" id="res-name">邱筠涵 Yuna</h1>
-                    <p class="text-orange-400 font-bold mb-6 tracking-widest uppercase text-sm" id="res-title">電商營運經理</p>
-                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-y-3 text-slate-400 text-sm">
-                        <div class="flex items-center justify-center md:justify-start">
-                            <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                            dots.chiu@gmail.com
-                        </div>
-                        <div class="flex items-center justify-center md:justify-start">
-                            <svg class="w-4 h-4 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"></path></svg>
-                            0918-896-697
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-
-        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <div class="lg:col-span-2 space-y-8">
-                <section class="bg-white/5 rounded-[2rem] p-10 border border-white/10">
-                    <h3 class="text-2xl font-black mb-8 flex items-center text-white">
-                        <span class="w-2 h-8 bg-orange-500 rounded-full mr-5"></span>
-                        <span id="label-about">專業自傳</span>
-                    </h3>
-                    <div id="res-about-content" class="text-slate-400 text-base leading-relaxed space-y-5"></div>
-                </section>
-
-                <section class="bg-white/5 rounded-[2rem] p-10 border border-white/10">
-                    <h3 class="text-2xl font-black mb-10 flex items-center text-white">
-                        <span class="w-2 h-8 bg-blue-500 rounded-full mr-5"></span>
-                        <span id="label-exp">工作經驗</span>
-                    </h3>
-                    <div class="space-y-12" id="res-exp-container"></div>
-                </section>
-            </div>
-
-            <div class="space-y-8">
-                <section class="bg-white/5 rounded-[2rem] p-10 border border-white/10">
-                    <h3 class="text-xl font-black mb-8 text-white" id="label-edu">學歷</h3>
-                    <div class="space-y-6" id="res-edu-content"></div>
-                </section>
-                <section class="bg-white/5 rounded-[2rem] p-10 border border-white/10">
-                    <h3 class="text-xl font-black mb-8 text-white" id="label-lang">語言能力</h3>
-                    <div class="space-y-5" id="res-lang-content"></div>
-                </section>
-                <section class="bg-white/5 rounded-[2rem] p-10 border border-white/10">
-                    <h3 class="text-xl font-black mb-8 text-white" id="label-certs">專業證照</h3>
-                    <ul class="space-y-4" id="res-certs-content"></ul>
-                </section>
-            </div>
-        </div>
-    </div>
-</div>
-
-<footer class="py-12 border-t border-white/10 text-center px-4">
-    <p class="text-slate-500 text-[10px] sm:text-sm tracking-widest uppercase leading-relaxed">
-        © 2026 CHIU YUN HAN (YUNA) - 電商營運作品集. All Rights Reserved.
-    </p>
-</footer>
-
+<!-- README MARKDOWN COPY SECTION -->
 <script>
-    function toggleView(view) {
-        const portfolio = document.getElementById('view-portfolio');
-        const resume = document.getElementById('view-resume');
-        const navPort = document.getElementById('nav-portfolio');
-        const navRes = document.getElementById('nav-resume');
-
-        if (view === 'portfolio') {
-            portfolio.classList.remove('hidden');
-            resume.classList.add('hidden');
-            navPort.classList.add('nav-active');
-            navRes.classList.remove('nav-active');
-            navRes.classList.add('text-slate-400');
-        } else {
-            portfolio.classList.add('hidden');
-            resume.classList.remove('hidden');
-            navPort.classList.remove('nav-active');
-            navPort.classList.add('text-slate-400');
-            navRes.classList.add('nav-active');
-            navRes.classList.remove('text-slate-400');
-        }
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    const cases = [
-        {
-            title: "案例一：活動 / 回饋 / 價格策略設計",
-            context: "蝦皮 (主) / YAHOO (輔) | 高單價耐用品 (家電)",
-            why: ["檔期回饋種類多，全開易導致毛利蝕本", "消費者只在意「最大方案」，分散回饋效果不彰", "ROAS 表現不穩，回饋效率極待優化"],
-            how: ["拆解三大變因：門檻、形式、上限", "比較不同方案對毛利與轉換的預估影響", "確立「單一最優回饋」策略，鎖定主力商品客單價"],
-            what: ["規劃活動門檻與回饋結構 (買多省多)", "運用 Google Sheets 建立回饋試算模型", "更換視覺素材，直觀呈現當日最佳回饋方案", "置頂熱賣品並協作行銷、廣告資源整合"],
-            results: [{ label: "對比同資源業績", value: "+94%", color: "text-orange-400" }, { label: "ROAS 提升", value: "22.36 → 75.24", color: "text-blue-400" }, { label: "毛利結構", value: "優化明顯", color: "text-green-400" }],
-            reflection: "單一最優回饋有助於內部決策與活動溝通。未來可進一步依平台會員制度新增門檻模型。"
-        },
-        {
-            title: "案例二：平台經營策略 (蝦皮 x YAHOO)",
-            context: "流量引擎 vs 穩定毛利之角色定位優化",
-            why: ["雙平台差異：蝦皮日流 5K-90K (均客單 7K)；Yahoo 日流 100-500 (均客單 4K)", "齊頭式定價會導致蝦皮轉換低、Yahoo 信任感流失", "使用者行為迥異：蝦皮重促銷，Yahoo 重品牌與穩定回饋"],
-            how: ["重新定義角色：蝦皮為流量與銷售引擎；Yahoo 為穩定利潤與品牌窗口", "差異化策略：蝦皮配合平台檔期爆發；Yahoo 維持穩定與獨家組合"],
-            what: ["蝦皮：搭配關鍵字廣告與活動曝光版位，主推高轉換商品", "Yahoo：設定平台登記回饋與限定組合，增加獨家競爭力", "控管兩平台價差過大，主檔活動錯開避免自家競爭"],
-            results: [{ label: "蝦皮銷量曝光", value: "大幅拉升", color: "text-orange-400" }, { label: "Yahoo 表現", value: "轉換穩定", color: "text-blue-400" }, { label: "營收結構", value: "更趨健康", color: "text-green-400" }],
-            reflection: "平台不只是「多賣一個地方」，而是不同的通路角色。價格策略必須搭配使用者行為。"
-        },
-        {
-            title: "案例三：成效不如預期的優化與復盤",
-            context: "蝦皮造節檔期 | 針對轉換率不佳進行即時修正",
-            why: ["曝光與流量達標，但轉換率低於預期", "回饋門檻過高導致命中率低", "原有高轉換商品已進入銷售疲乏期"],
-            how: ["即時更換主打品為季節性新品，提高進站轉換", "下修回饋門檻提升參與率", "素材改以「實際使用情境+核心利益點」呈現"],
-            what: ["調整後持續觀察 3-5 天數據變化", "同步回饋數據給行銷與設計團隊進行迭代", "建立「活動中期優化 SOP」，而非只看結案結果"],
-            results: [{ label: "ROAS 提升", value: "+6", color: "text-orange-400" }, { label: "轉換率", value: "成功回升", color: "text-blue-400" }, { label: "優化週期", value: "3-5天", color: "text-green-400" }],
-            reflection: "產品結構需符合平台習慣。建立中期優化機制是轉換回升的關鍵。"
-        }
-    ];
-
-    function switchCase(index) {
-        const display = document.getElementById('caseDisplay');
-        const data = cases[index];
-        document.querySelectorAll('.case-btn').forEach((btn, i) => {
-            if (i === index) { btn.classList.add('case-tab-active'); btn.classList.remove('bg-white/5', 'text-slate-400'); }
-            else { btn.classList.remove('case-tab-active'); btn.classList.add('bg-white/5', 'text-slate-400'); }
-        });
-        display.style.opacity = '0';
-        setTimeout(() => {
-            display.innerHTML = `
-                <div class="grid lg:grid-cols-3 gap-8">
-                    <div class="lg:col-span-2 space-y-6">
-                        <div class="bg-white/5 rounded-3xl p-8 border border-white/10 text-left">
-                            <h4 class="text-3xl font-black mb-2 text-white">${data.title}</h4>
-                            <p class="text-orange-400 font-bold mb-8 italic text-sm">${data.context}</p>
-                            <div class="grid md:grid-cols-2 gap-8">
-                                <div><h5 class="text-orange-400 font-bold mb-4 uppercase text-xs">WHY</h5><ul class="space-y-3 text-slate-300 text-sm">${data.why.map(item => `<li class="flex items-start"><span class="mr-2 text-orange-500">▹</span>${item}</li>`).join('')}</ul></div>
-                                <div><h5 class="text-blue-400 font-bold mb-4 uppercase text-xs">HOW</h5><ul class="space-y-3 text-slate-300 text-sm">${data.how.map(item => `<li class="flex items-start"><span class="mr-2 text-blue-500">▹</span>${item}</li>`).join('')}</ul></div>
-                            </div>
-                        </div>
-                        <div class="bg-white/5 rounded-3xl p-8 border border-white/10 text-left">
-                            <h5 class="text-purple-400 font-bold mb-4 uppercase text-xs">WHAT I DID</h5>
-                            <div class="grid md:grid-cols-2 gap-3">${data.what.map(item => `<div class="bg-white/5 p-4 rounded-xl text-sm text-slate-300">${item}</div>`).join('')}</div>
-                        </div>
-                    </div>
-                    <div class="space-y-6 text-center">
-                        <div class="bg-slate-900 rounded-3xl p-10 border border-white/10 shadow-2xl">
-                            <h5 class="text-white font-bold mb-6 tracking-widest text-xs uppercase">Results</h5>
-                            <div class="space-y-8">${data.results.map(res => `
-                                <div><div class="text-[10px] text-slate-500 font-bold uppercase mb-1">${res.label}</div><div class="text-4xl font-black ${res.color}">${res.value}</div></div>
-                            `).join('')}</div>
-                        </div>
-                        <div class="bg-orange-500/10 rounded-3xl p-8 border border-orange-500/20 text-left">
-                            <p class="text-slate-300 text-sm italic leading-relaxed">"${data.reflection}"</p>
-                        </div>
-                    </div>
-                </div>
-            `;
-            display.style.opacity = '1';
-        }, 300);
-    }
-
-    const resumeData = {
-        zh: {
-            name: "邱筠涵 Yuna",
-            title: "電商營運經理",
-            aboutLabel: "專業自傳",
-            aboutContent: `
-                <p class="font-bold text-slate-100 text-lg">「人要為自己負責」——這是我自幼深植的核心信念。</p>
-                <p>這份責任感驅動我在每份工作中主動承擔、持續精進。擁有 4 年跨平台電商營運經驗，橫跨台灣、新加坡、香港三地市場，熟悉 B2C/C2C 通路生態，具備從平台建置、活動策略到數據優化的完整實戰能力。</p>
-                <p>在 <strong>城欣科技</strong> 期間，主導蝦皮與 Yahoo 雙平台策略，年度最高達 <strong>YOY 57%</strong> 增長，並達成 <strong>單平台月均營收突破 900 萬</strong> 的紀錄。現任職 <strong>尚懿科技</strong>，主導台、港、星三地寵物用品電商從 0 到 1 的完整通路架構建置，涵蓋 Shopee、Lazada、Shopify 及 CYBERBIZ，並於啟動後實現 <strong>GMV 月均成長 64%、最高單月成長 150%</strong> 的表現。</p>
-                <p>我具備數據優化、多市場廣告投放及跨境通路整合的完整實力，期待在更具挑戰性的舞台持續創造可量化的業績成長。</p>
-            `,
-            expLabel: "工作經驗",
-            eduLabel: "學歷",
-            langLabel: "語言能力",
-            certLabel: "專業證照",
-            experiences: [
-                {
-                    company: "尚懿科技發展有限公司",
-                    title: "電商營運經理",
-                    date: "2026.01 - 至今",
-                    badge: "🌏 台灣・新加坡・香港",
-                    highlights: [
-                        "主導台、港、星三地寵物用品電商從 0 到 1 建置，涵蓋 Shopee TW/SG、Lazada SG、Shopify（HK/SG）及 CYBERBIZ（TW）",
-                        "管理約 <strong>500 SKU</strong>（自有品牌、總代理、代理、選品），制定各市場 SKU 規則與庫存監控報表",
-                        "GMV 月均成長 <strong>64%</strong>，最高單月成長達 <strong>150%</strong>",
-                        "建立活動標準化作業流程，協助品牌對接蝦皮年度大促（如 6.18）於台灣及新加坡市場，確保新市場曝光極大化",
-                        "負責 Google Ads 與 Meta Ads 初步投放，協助品牌於各區域快速累積首波受眾數據"
-                    ]
-                },
-                {
-                    company: "城欣科技股份有限公司",
-                    title: "電商營運資深專員",
-                    date: "2024.07 - 2026.01",
-                    badge: null,
-                    highlights: [
-                        "負責 Shopee、YAHOO 平台營運，年度最高 <strong>YOY 達 57%</strong>",
-                        "單一平台 <strong>月均業績突破 900 萬</strong>",
-                        "制定行銷策略與廣告投放優化，建立回饋試算模型提升活動決策效率"
-                    ]
-                },
-                {
-                    company: "可易家電有限公司",
-                    title: "業務主任",
-                    date: "2023.09 - 2024.05",
-                    badge: null,
-                    highlights: [
-                        "主導商品頁改版，<strong>轉換率成長 21%</strong>，業績成長 48%",
-                        "開發多元通路，個人業績成長翻倍",
-                        "導入直播模式，30 分鐘產出 7 筆轉單"
-                    ]
-                },
-                {
-                    company: "十方力有限公司",
-                    title: "行銷企劃專員",
-                    date: "2022.04 - 2023.02",
-                    badge: null,
-                    highlights: [
-                        "負責 KOL/KOC/團媽開發與合作洽談",
-                        "撰寫高效轉化文案，進行多通路產品提品與上下架",
-                        "執行廣告投放與數據追蹤，優化受眾投遞精準度"
-                    ]
-                },
-                {
-                    company: "富海科技",
-                    title: "韓文翻譯人員",
-                    date: "2021.01 - 2021.12",
-                    badge: null,
-                    highlights: [
-                        "負責各式韓文文件與口譯工作",
-                        "協助跨國溝通與產品在地化翻譯"
-                    ]
-                }
-            ],
-            edu: [
-                { school: "銘傳大學", major: "應用中文學系 | 學士" },
-                { school: "梨花女子大學語學堂", major: "韓國語文學系研修" }
-            ],
-            langs: [
-                { name: "中文", level: "母語" },
-                { name: "韓文 TOPIK 6", level: "高級" },
-                { name: "英文 TOEIC 600", level: "中級" }
-            ],
-            certs: ["Google Ads 認證", "第一屆 AI 應用規劃師結業", "TOPIK 韓文檢定 6 級", "SSE Microsoft Office 認證"]
-        },
-        en: {
-            name: "Chiu Yun-Han (Yuna)",
-            title: "E-commerce Operations Manager",
-            aboutLabel: "Biography",
-            aboutContent: `
-                <p class="font-bold text-slate-100">"Accountability is key" — my professional core belief.</p>
-                <p>With 4 years of cross-platform e-commerce experience spanning Taiwan, Singapore, and Hong Kong, I specialize in building market presence from scratch, optimizing conversion funnels, and driving measurable GMV growth.</p>
-                <p>At <strong>Chengxin Tech</strong>, I achieved peak <strong>57% YOY growth</strong> and sustained <strong>NT$9M+ monthly revenue</strong> on a single platform. At <strong>Shang Yi Tech</strong>, I built a full cross-border pet product operation across TW/SG/HK from zero, achieving <strong>64% average monthly GMV growth</strong> and a peak single-month growth of <strong>150%</strong>.</p>
-            `,
-            expLabel: "Experience",
-            eduLabel: "Education",
-            langLabel: "Languages",
-            certLabel: "Certifications",
-            experiences: [
-                {
-                    company: "Shang Yi Technology Co., Ltd.",
-                    title: "E-commerce Operations Manager",
-                    date: "2026.01 - Present",
-                    badge: "🌏 TW · SG · HK",
-                    highlights: [
-                        "Built cross-border pet product e-commerce from zero across TW/SG/HK — Shopee TW/SG, Lazada SG, Shopify (HK/SG), CYBERBIZ (TW)",
-                        "Managed ~<strong>500 SKUs</strong> (own brand, distributor, reseller, curated); established inventory monitoring system",
-                        "Achieved average monthly <strong>GMV growth of 64%</strong>, with peak single-month growth of <strong>150%</strong>",
-                        "Standardized campaign execution SOP; coordinated brand entry into Shopee major promotions (e.g. 6.18) across TW & SG markets",
-                        "Launched Google Ads & Meta Ads to build initial audience data across markets"
-                    ]
-                },
-                {
-                    company: "Chengxin Technology Co., Ltd.",
-                    title: "Senior E-commerce Specialist",
-                    date: "2024.07 - 2026.01",
-                    badge: null,
-                    highlights: [
-                        "Managed Shopee & Yahoo with peak <strong>57% YOY growth</strong>",
-                        "Sustained <strong>NT$9M+ monthly revenue</strong> on a single platform",
-                        "Built promotional ROI calculator to optimize campaign decision-making"
-                    ]
-                },
-                {
-                    company: "Keyi Home Appliances",
-                    title: "Business Manager",
-                    date: "2023.09 - 2024.05",
-                    badge: null,
-                    highlights: [
-                        "Increased <strong>CR by 21%</strong> via product page redesign; overall revenue +48%",
-                        "Doubled personal sales through new channel development",
-                        "Launched livestream campaigns generating 7 conversions in 30 minutes"
-                    ]
-                },
-                {
-                    company: "Shifangli Co., Ltd.",
-                    title: "Marketing Specialist",
-                    date: "2022.04 - 2023.02",
-                    badge: null,
-                    highlights: [
-                        "Managed KOL/KOC partnerships and community group buy recruitment",
-                        "Wrote high-conversion copywriting across multiple channels",
-                        "Executed paid ad campaigns and audience analytics"
-                    ]
-                },
-                {
-                    company: "Fuhai Technology",
-                    title: "Korean Translator",
-                    date: "2021.01 - 2021.12",
-                    badge: null,
-                    highlights: [
-                        "Handled Korean-Chinese translation and interpreting",
-                        "Supported cross-border communication and product localization"
-                    ]
-                }
-            ],
-            edu: [
-                { school: "Ming Chuan University", major: "Applied Chinese | BA" },
-                { school: "Ewha Womans University", major: "Korean Language Program" }
-            ],
-            langs: [
-                { name: "Chinese", level: "Native" },
-                { name: "Korean TOPIK 6", level: "Advanced" },
-                { name: "English TOEIC 600", level: "Intermediate" }
-            ],
-            certs: ["Google Ads Certification", "AI Application Planner (1st Cohort)", "TOPIK Level 6", "SSE Microsoft Office"]
-        }
+  // Add a copy button for the README content
+  document.addEventListener('DOMContentLoaded', () => {
+    const btn = document.createElement('button');
+    btn.textContent = '📋 Copy README (Markdown)';
+    btn.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#fb923c;color:#0f172a;border:none;padding:10px 18px;border-radius:20px;font-weight:700;font-size:12px;cursor:pointer;z-index:999;';
+    btn.onclick = () => {
+      navigator.clipboard.writeText(readmeMarkdown).then(() => {
+        btn.textContent = '✅ Copied!';
+        setTimeout(() => btn.textContent = '📋 Copy README (Markdown)', 2000);
+      });
     };
+    document.body.appendChild(btn);
+  });
 
-    function toggleLang(lang) {
-        const data = resumeData[lang];
-        document.getElementById('res-name').innerText = data.name;
-        document.getElementById('res-title').innerText = data.title;
-        document.getElementById('label-about').innerText = data.aboutLabel;
-        document.getElementById('res-about-content').innerHTML = data.aboutContent;
-        document.getElementById('label-exp').innerText = data.expLabel;
-        document.getElementById('label-edu').innerText = data.eduLabel;
-        document.getElementById('label-lang').innerText = data.langLabel;
-        document.getElementById('label-certs').innerText = data.certLabel;
+  const readmeMarkdown = `# 邱筠涵 · Yuna Chiu
 
-        const expContainer = document.getElementById('res-exp-container');
-        expContainer.innerHTML = data.experiences.map((exp, index) => `
-            <div class="relative pl-10 border-l-2 ${index === 0 ? 'border-orange-500/40' : 'border-white/10'}">
-                <div class="absolute -left-[9px] top-1.5 w-4 h-4 ${index === 0 ? 'bg-orange-500 ring-4 ring-orange-500/20' : 'bg-slate-700'} rounded-full"></div>
-                <div class="flex flex-col sm:flex-row justify-between mb-2">
-                    <div>
-                        <h4 class="font-black text-white text-xl">${exp.company}</h4>
-                        ${exp.badge ? `<span class="inline-block mt-1 px-3 py-0.5 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-xs font-bold rounded-full">${exp.badge}</span>` : ''}
-                    </div>
-                    <span class="${index === 0 ? 'text-orange-400' : 'text-slate-500'} font-mono text-sm font-bold shrink-0 mt-1 sm:mt-0">${exp.date}</span>
-                </div>
-                <p class="text-slate-300 font-bold mb-4">${exp.title}</p>
-                <ul class="text-slate-400 text-sm space-y-2 list-disc pl-5">
-                    ${exp.highlights.map(h => `<li>${h}</li>`).join('')}
-                </ul>
-            </div>
-        `).join('');
+**E-commerce Operations Manager · Cross-Border Growth Specialist**
 
-        document.getElementById('res-edu-content').innerHTML = data.edu.map(e => `
-            <div><p class="text-white font-bold text-sm">${e.school}</p><p class="text-slate-400 text-xs">${e.major}</p></div>
-        `).join('');
+![4 Yrs E-commerce](https://img.shields.io/badge/4%20Yrs-E--commerce-fb923c?style=flat-square)
+![TW SG HK](https://img.shields.io/badge/Markets-TW%20%C2%B7%20SG%20%C2%B7%20HK-58a6ff?style=flat-square)
+![GMV +64% MoM](https://img.shields.io/badge/GMV-%2B64%25%20MoM-3fb950?style=flat-square)
+![TOPIK Level 6](https://img.shields.io/badge/Korean-TOPIK%206-bc8cff?style=flat-square)
+![Open to Opportunities](https://img.shields.io/badge/Status-Open%20to%20Opportunities-d2a22a?style=flat-square)
 
-        document.getElementById('res-lang-content').innerHTML = data.langs.map(l => `
-            <div class="flex justify-between items-center">
-                <span class="text-slate-300 text-sm">${l.name}</span>
-                <span class="text-orange-400 text-xs font-bold uppercase">${l.level}</span>
-            </div>
-        `).join('');
+---
 
-        document.getElementById('res-certs-content').innerHTML = data.certs.map(c => `
-            <li class="flex items-start"><span class="text-orange-500 mr-3">✦</span> ${c}</li>
-        `).join('');
+## 👋 About Me
 
-        document.getElementById('lang-zh').className = lang === 'zh'
-            ? 'px-5 py-2 rounded-lg text-xs font-bold transition-all lang-btn-active'
-            : 'px-5 py-2 rounded-lg text-xs font-bold transition-all text-slate-400';
-        document.getElementById('lang-en').className = lang === 'en'
-            ? 'px-5 py-2 rounded-lg text-xs font-bold transition-all lang-btn-active'
-            : 'px-5 py-2 rounded-lg text-xs font-bold transition-all text-slate-400';
-    }
+跨平台電商營運經理，專注於 **數據導向成長策略**、跨境市場建置與活動策略規劃。
+目前主導台灣、新加坡、香港三地寵物全品類電商從 0 到 1 的完整通路建構，涵蓋 Shopee、Lazada、Shopify 及 CYBERBIZ，管理約 500 個 SKU。
 
-    function animateCounter(element) {
-        const target = parseFloat(element.dataset.target);
-        const suffix = element.dataset.suffix || '';
-        const duration = 1000;
-        const frameRate = 60;
-        const increment = target / ((duration / 1000) * frameRate);
-        let current = 0;
-        const timer = setInterval(() => {
-            current += increment;
-            if (current >= target) { current = target; clearInterval(timer); }
-            element.textContent = (Number.isInteger(target) ? Math.floor(current) : current.toFixed(1)) + suffix;
-        }, 1000 / frameRate);
-    }
+Cross-border e-commerce operations manager specializing in **data-driven growth**, multi-market channel development, and campaign strategy across Taiwan, Singapore & Hong Kong.
 
-    window.onload = () => {
-        document.querySelectorAll('.counter').forEach(animateCounter);
-        switchCase(0);
-        toggleLang('zh');
-    };
+| 📊 Metric | 🔢 Value |
+|-----------|----------|
+| 電商年資 Experience | 4 年 |
+| 操作平台 Platforms | 23+ |
+| 月均業績高峰 Peak Monthly Revenue | NT$9M |
+| 海外市場 Overseas Markets | TW · SG · HK |
+
+---
+
+## 💼 Work Experience
+
+| Company | Role | Period | Key Achievement |
+|---------|------|--------|-----------------|
+| 尚懿科技發展有限公司 🌏 TW/SG/HK | 電商營運經理 | 2026.01 – 至今 | GMV 月均 +64%，最高單月 +150% |
+| 城欣科技股份有限公司 | 電商營運資深專員 | 2024.07 – 2026.01 | YOY +57%，月均業績 900萬 |
+| 可易家電有限公司 | 業務主任 | 2023.09 – 2024.05 | CR +21%，業績 +48% |
+| 十方力有限公司 | 行銷企劃專員 | 2022.04 – 2023.02 | KOL 開發，韓國市場選品與競品分析 |
+| 富海科技翻譯有限公司 | 韓文翻譯人員 | 2021.05 – 2022.01 | 韓中翻譯，跨文化溝通 |
+
+---
+
+## 🛠️ Tech Stack & Skills
+
+**🛒 電商平台**
+\`Shopee TW/SG\` \`Lazada SG\` \`MOMO\` \`Yahoo Shopping\` \`PChome\` \`Shopify\` \`CYBERBIZ\`
+
+**📊 數位廣告**
+\`Google Ads ✓ Certified\` \`Meta Ads\` \`Platform Ads\`
+
+**🎨 設計 & 生產力**
+\`Adobe Illustrator\` \`Adobe Photoshop\` \`Canva\` \`MS Excel (Advanced)\` \`PowerPoint\`
+
+**🤖 AI 工具**
+\`ChatGPT\` \`Claude\` \`Google Gemini\` \`NotebookLM\`
+
+---
+
+## 🌐 Languages
+
+| Language | Level |
+|----------|-------|
+| 中文 Chinese | 母語 Native |
+| 韓文 Korean | TOPIK Level 6 — Advanced |
+| 英文 English | TOEIC 600 — Intermediate |
+
+---
+
+## 🏆 Certifications
+
+- ✦ Google Ads 認證
+- ✦ AI 應用規劃師培訓班結業（第一屆）
+- ✦ TOPIK 韓文檢定 6 級
+- ✦ SSE Microsoft Office 認證
+
+---
+
+## 📬 Contact
+
+📧 [dots.chiu@gmail.com](mailto:dots.chiu@gmail.com) · 📱 0918-896-697 · 📍 新北市三重區・台灣
+
+---
+
+*© 2026 Chiu Yun-Han (Yuna) · E-commerce Operations Manager*
+`;
 </script>
 </body>
 </html>
